@@ -55,13 +55,14 @@ You can find additional information for our project below. You can find any addi
 
 There is a possibility that you need to configure Nomothesi@. For this purpose there is a configuration file called properties.properties, which specify the following information:
 
+```
 XMLDBServer=http://localhost:8080/BaseX782  (BaseX Server path)
 XMLDBName=Legislation (BaseX DataBase name)
 SesameServer=http://localhost:8080/openrdf-sesame (Sesame Server path)
 SesameRepositoryID=Legislation (Sesame Server repository name)
 BaseURI=http://www.semanticweb.org/ilias/ontologies/2013/11/untitled-ontology-5#GRLegislation/ (BaseURI of RDF metadata)
-
-CAUTION: Modify this configuration file, only if you are really expertised in Web Application Development.
+```
+**CAUTION:** Modify this configuration file, only if you are really expertised in Web Application Development.
 
 
 ##Apache Cocoon Framework Overview
@@ -138,10 +139,10 @@ Our basic data model is the XML schema. Usually we use pure XML files as data mo
 
 ##Demo Sample Files (Legal Documents)
 
-PD201154.xml
-PD201210.xml
-PD201340.xml
-LAW20144229.xml
+PD201154.xml 
+PD201210.xml 
+PD201340.xml 
+LAW20144229.xml 
 
 
 ##Test Environment
