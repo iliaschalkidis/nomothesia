@@ -3,9 +3,13 @@
 ##Software / Library Dependencies
 
 Java Version: Java™ SE 7
+
 Build Tool: Apache Maven 3.2.1
+
 Web Server: Apache Tomcat 7 (Suggested) / Jetty Server 6.1.7
+
 RDFStore: Sesame Server 2.7.9
+
 XML DB Server: BaseX 7.8.2
 
 ##Installation
