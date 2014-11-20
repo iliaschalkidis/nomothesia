@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+    <xsl:param name="type1"/>
+    <xsl:param name="id1"/>
+  <xsl:template match="/">
+    <html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>@ΝΟΜΟΘΕΣΙΑ</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+        <meta name="google-translate-customization" content="d04b9807188f6071-f105a0214bb60244-gae9357c6b9494053-1c"></meta>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+        <link href="http://localhost:8888/GRLegislation/css/styles.css" rel="stylesheet"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">//</script>
+        <script type="text/javascript">
+           $("document").ready(function(){
+            $(window).scrollTop($('#<xsl:value-of select="$type1"/>-<xsl:value-of select="$id1"/>').offset().top);
+           })
+        </script>
+        </head>
+        <body  style="background-image:url('http://localhost:8888/GRLegislation/images/background.png')" class="notranslate">
+            <div id="wrapper">
+                <div id="header" style="background-image:url('http://localhost:8888/GRLegislation/images/header.jpg')">
+                    <div id="title"><h1>@ΝΟΜΟΘΕΣΙΑ</h1></div>
+                    <div id="header_locale">
+                        <table>
+                            <tr>
+                                <td>
+                                    gr
+                                </td>
+                                <td>
+                                    /
+                                </td>
+                                <td>
+                                    uk
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="header_menu">
+                        <ul>
+                            <li><a href="http://localhost:8888/GRLegislation/index.html">Αρχική</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/search.html">Αναζήτηση</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/about.html">Πληροφορίες</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/help.html">Βοήθεια</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/contact.html">Επικοινωνία</a></li>
+                        </ul>
+                    </div>
+                    <div id="header_social">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h6>Ακολουθήστε μας στα social media! </h6>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/facebook-logo.png" align="right" width="30" height="30"/>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/twitter-logo.png" align="right" width="30" height="30"/>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/rss-logo.png" align="right" width="25" height="25"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="content_column">
+                        <ul>
+                            <lh>ΕΚΔΟΣΕΙΣ</lh>
+                            <li><a href="index.html">Τρέχουσα</a></li>
+                            <li><a href="index.html">Πρώτη</a></li>
+                        </ul><br/>
+                        <div class="button" >
+                            <a style="color: #fff;">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/data.xml
+                                </xsl:attribute>XML Μορφή</a>
+                        </div><br/><br/>
+                        <div class="button" >
+                            <a style="color: #fff;">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/data.rdf
+                                </xsl:attribute>RDF Μορφή</a>
+                        </div><br/><br/>
+                        <div class="button" >
+                            <a style="color: #fff;">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/data.pdf
+                                </xsl:attribute>PDF Μορφή</a>
+                        </div><br/><br/>
+                       
+                    </div>
+		    <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                                        function googleTranslateElementInit() {
+                                          new google.translate.TranslateElement({pageLanguage: 'el', includedLanguages: 'en,ur', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: false}, 'content_text');
+                                        }
+                                    </script>
+                                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">//</script>
+                    <div id="content_body">
+                        <div id="content_text" class="translate">
+                          <div id="content_bar">
+                                 <ul>
+                                    <li style="font-size: 16px; font-weight: bold; float:left; padding-right:2em;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/contents
+                                        </xsl:attribute>Περιεχόμενα</a>
+                                    </li>
+                                    <li style="font-size: 16px; font-weight: bold; float:left; padding-right:2em;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>
+                                        </xsl:attribute>Κείμενο</a>
+                                    </li>
+                                    <li style="font-size: 16px; font-weight: bold; float:left; padding-right:2em;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/timeline
+                                        </xsl:attribute>Χρονολόγιο</a>
+                                    </li>
+                                </ul>
+                                </div>
+                                <br/>
+                                <br/>
+                        <table border="0">
+                        <tr><td>ΦΕΚ:&#160;</td> 
+                            <td><xsl:value-of select="Legislation/Metadata/diavgeia:fek/issue"/>
+                        / <xsl:value-of select="Legislation/Metadata/diavgeia:fek/year"/>
+                        / <xsl:value-of select="Legislation/Metadata/diavgeia:fek/fekNumber"/>
+                        </td></tr>
+                        <tr>
+                            <td>ΚΩΔΙΚΟΣ ΑΠΟΦΑΣΗΣ:&#160;</td>
+                            <td> <xsl:value-of select="Legislation/Metadata/diavgeia:decisionType/diavgeia:label"/>
+                            &#160; <xsl:value-of select="Legislation/Metadata/Year"/>
+                            / <xsl:value-of select="Legislation/Metadata/Number"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ΗΜΕΡΟΜΗΝΙΑ ΕΚΔΟΣΗΣ:&#160;</td> 
+                            <td>
+                                <xsl:value-of select="Legislation/Metadata/dc:created"/>
+                               
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>ΥΠΟΓΡΑΦΗ:&#160;</td> 
+                            <td>
+                                <xsl:for-each select="Legislation/Metadata/diavgeia:signer">
+                                <xsl:value-of select="diavgeia:firstName"/>&#160;
+                                <xsl:value-of select="diavgeia:lastName"/>,&#160;
+                                </xsl:for-each>
+                            </td>
+                           
+                        </tr>
+                         <tr>
+                            <td>ΣΧΕΤΙΚΑ ΜΕ:&#160;</td> 
+                            <td>
+                                <xsl:for-each select="Legislation/Metadata/diavgeia:tag">
+                                <xsl:value-of select="diavgeia:label"/>,&#160;
+                                </xsl:for-each>
+                            </td>
+                           
+                        </tr>
+                        </table>
+                        <br/>
+                        <h4>
+                            <xsl:value-of select="Legislation/Metadata/dc:title"/>
+                        </h4>
+                  
+                                                 <br/>
+                                                 <!--<xsl:for-each select="Legislation/Body/Book">
+                                                     <h5>ΒΙΒΛΙΟ <xsl:value-of select="Number"/></h5>
+                                                     <h6><xsl:value-of select="Title"/></h6><br/>
+                                                 <xsl:for-each select="Legislation/Body/Part">
+                                                     <h5>ΜΕΡΟΣ <xsl:value-of select="Number"/></h5>
+                                                     <h6><xsl:value-of select="Title"/></h6><br/>
+                                                 <xsl:for-each select="Legislation/Body/Section">
+                                                     <h5>ΤΜΗΜΑ <xsl:value-of select="Number"/></h5>
+                                                     <h6><xsl:value-of select="Title"/></h6><br/>
+                                                 <xsl:for-each select="Legislation/Body/Chapter">
+                                                     <h5>ΚΕΦΑΛΑΙΟ <xsl:value-of select="Number"/></h5>
+                                                     <h6><xsl:value-of select="Title"/></h6><br/> -->
+                                                 <xsl:for-each select="Legislation/Body/Article">
+                                                    <div><xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+                                                    <p>
+                                                        <h5>Άρθρο
+                                                            <xsl:value-of select="Number"/>
+                                                        </h5>
+                                                        <xsl:if test="Title">
+                                                        <h6>
+                                                            <xsl:value-of select="Title"/>
+                                                         </h6>
+                                                         </xsl:if>
+                                                        <br/>
+                                                        <ol>
+                                                        <xsl:for-each select="P">
+                                                            <div><xsl:attribute name="id">
+                                                                <xsl:value-of select="@DocumentURI"/>
+                                                                </xsl:attribute>
+                                                            <li>
+                                                             <xsl:for-each select="P2">
+                                                                 <xsl:value-of select="Text"/>&#160;
+                                                             </xsl:for-each>
+                                                             <xsl:for-each select="List">
+                                                                 <ol style="list-style-type:lower-greek">
+                                                                 <xsl:for-each select="Case">
+                                                                     <li>
+                                                                         <xsl:value-of select="Text"/>
+                                                                     </li>
+                                                                 </xsl:for-each>
+                                                                 </ol>
+                                                             </xsl:for-each>
+                                                            </li> 
+                                                            </div>                                                           
+                                                        </xsl:for-each>
+                                                        </ol>
+                                                    </p>
+                                                    </div>
+                                                 </xsl:for-each>
+                                                 <!--</xsl:for-each>
+                                                 </xsl:for-each>
+                                                 </xsl:for-each>
+                                                 </xsl:for-each>-->
+                    </div>
+                    </div>
+                </div>
+                <div id="footer" style="background-image:url('http://localhost:8888/GRLegislation/images/footer.jpg')">   
+                </div>
+            </div>
+        </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
+

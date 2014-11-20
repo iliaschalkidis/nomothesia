@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ΝΟΜΟΘΕΣΙ@</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Jura&amp;subset=latin,greek' rel='stylesheet' type='text/css'/>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js">//</script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">//</script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js">//</script>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+        $( "#datepicker2" ).datepicker();
+        $( "#datepicker3" ).datepicker();
+      });
+
+      $(document).ready(function(){
+      $('#trends').dataTable({
+          aaSorting: [[ 2, "desc" ]],
+           bSortable: true,
+          "iDisplayLength": 4,
+           aoColumnDefs: [
+                { "aTargets": [ 0 ], "bSortable": true },
+                { "aTargets": [ 1 ], "bSortable": true },
+                { "aTargets": [ 2 ], "bSortable": true },
+            ],
+          "bLengthChange": false
+      });
+        
+      $( "#tabs" ).tabs();
+  
+    });
+    </script>
+    </head>
+    <body style="background-image:url('images/background3.jpg')">
+        <div id="wrapper">
+            <div id="header" style="background-image:url('images/header.jpg')">
+                <div id="title"><h1>ΝΟΜΟΘΕΣΙ@</h1></div>
+                <div id="header_locale">
+                    <table>
+                        <tr>
+                            <td>
+                                gr
+                            </td>
+                            <td>
+                                /
+                            </td>
+                            <td>
+                                en
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="header_menu">
+                    <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="">Information</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="header_social">
+                    
+                </div>
+            </div>
+            <!-- Print search results -->
+            <div id="content">
+                    <div id="tabs">
+                        <ul>
+                        <li><a href="#tabs-1">Search Results</a></li>
+                        </ul>
+                    <div id="tabs-1">
+                        <table id="trends" style="white-space: normal;line-height: normal;font-weight: normal;font-variant: normal;font-style: normal;text-align: justify; text-justify:inter-word;">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                        <th>Number</th>
+                        <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <xsl:for-each select="results/result">
+                        <tr>
+                            <td>
+                                 <a><xsl:attribute name="href">
+                            <xsl:value-of select="id"/>
+                                 </xsl:attribute>
+                                 <xsl:value-of select="title"/>
+                                 </a>
+                            </td>
+                            <td>
+                                <xsl:value-of select="type"/>&#160;
+                                <xsl:value-of select="year"/>/<xsl:value-of select="number"/>
+                            </td>
+                            <td>
+                                <xsl:value-of select="date"/>
+                            </td>
+                        </tr>
+                        </xsl:for-each>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <div id="content_mainsearch">
+                <div id="middle_first2">
+            <form action="search">    
+            <table border="0" style="font-size:medium;" >
+            <tr>
+            <td>Keywords:</td>
+            <td><input type="text" name="keywords" title="Χωρίστε τις λέξεις με κόμμα (,)" style="width: 240px;"/></td>
+            </tr>
+            <tr>
+            <td>Legislation Type:</td>
+            <td><select name="type">
+              <option>-</option>
+              <option value="con">Σύνταγμα</option>
+              <option value="law">Νόμος</option>
+              <option value="pd">Προεδρικό Διάταγμα (ΠΔ)</option>
+              <option value="amc">Πράξη Υπουργικού Συμβουλίου (ΠΥΣ)</option>
+              <option value="la">Πράξη Νομοθετικού Περιεχομένου (ΠΝΠ)</option>
+              <option value="md">Κοινή Υπουργική Απόφαση (ΚΥΑ)</option>
+              <option value="md">Υπουργική Απόφαση (ΥΑ)</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Serial Number:</td>
+            <td>
+            <select name="year">
+              <option>-</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+            </select>
+            / <input type="text" name="id" style="width: 170px;"/>
+            </td>
+            </tr>
+            <tr>
+            <td>Publication Date:</td>
+            <td> <input type="text" id="datepicker" title="Επιλέξτε ημερομηνία με την βοήθεια του παραθύρου" name="date"/></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td> <br/></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td> <input type="submit" class="button" style="width: 300px;" value="Search"/></td>
+            </tr>
+            </table>
+            
+            </form>
+            </div>
+            <br/>
+            <div id="advacedsearch2">
+                <div id="middle_first2">
+                <form>
+                    <table style="font-size:medium;">
+                        <tr>
+                            <td>Gazette Issue:</td>
+                            <td><select>
+                              <option value="a">First Issue (Α)</option>
+                              <option value="b">Τεύχος Δεύτερο (Β)</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Gazette Serial Number:</td>
+                            <td><select name="fekyear">
+              <option>-</option>
+              <option value="2014">2014</option> 
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+            </select>&#160;/&#160;<input type="text" name="fekNumber" style="width: 110px"/></td>
+                        </tr>
+                        <tr>
+                            <td>Publication Date:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>From:</td>
+                            <td>To:</td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" id="datepicker2" name="date2"/></td>
+                            <td> <input type="text" id="datepicker3" name="date3"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><div class="button2" style="width: 180px; height: 20px;" ><a href="advancedsearch" style="font-size:21px;">Advanced Search</a></div></td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+            </div>
+            </div>
+            
+            
+                    </div>
+                    
+
+                <div id="footer" style="background-image:url('images/footer.jpg')" ></div>   
+            <br/>
+            <br/>
+            <br/>
+            <h6>Department of Informatics &amp; Telecommunications UOA - Open Data</h6>
+            </div>
+
+    </body>
+    </html>
+  </xsl:template>
+
+</xsl:stylesheet>

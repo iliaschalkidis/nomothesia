@@ -1,0 +1,111 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ΝΟΜΟΘΕΣΙ@</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Jura&subset=latin,greek' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script>
+  $(function() {
+    var myPos = [ $(window).width() / 4, 170 ];
+
+    $("#dialog").dialog({ autoOpen: false, minHeight: 350, minWidth: 600, position: myPos });
+ 
+        $("#contact").click(
+            function () {
+                $("#dialog").dialog('open');
+                return false;
+            }
+        );
+        
+    $(window).resize(function(){
+  $('#container').css({
+    position:'absolute',
+    left: ($(window).width() - $('#body').outerWidth())/2,
+    top: ($(window).height() - $('#body').outerHeight())/2
+  });
+  
+});
+
+// To initially run the function:
+$(window).resize();
+
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  });
+
+$(function() {
+  $("#accordion" ).accordion({
+   collapsible: true,
+   navigation: true,
+   autoHeight: false,
+   heightStyle: "content"
+});
+});
+</script>
+</head>
+<body style="background-image:url('images/background3.jpg')">
+    <div id="dialog" title="Στοιχεία Επικοινωνίας">
+        <p> <img src="images/me.jpg" style="padding:0 0 0px 0px;" align="right" width="100"/>
+        Ηλίας Χαλκίδης (Ilias Chalkidis)<br/>
+        Προπτυχιακός Φοιτητής, Τμήμα Πληροφορικής & Τηλ/νωνιών, ΕΚΠΑ<br/>
+        sdi0700122[at]di.uoa.gr
+	</p>
+    </div>
+    <div id="wrapper">
+        <div id="header2" style="background-image:url('images/header.jpg')">
+            <div id="title"><h1>ΝΟΜΟΘΕΣΙ@</h1></div>
+            <div id="header_menu">
+                <ul>
+                    <li><a href="./">Αρχική</a></li>
+                    <li><a href="developer">Πληροφορίες</a></li>
+                    <li><a href="">Σχετικά</a></li>
+                    <li><a id="contact" href="#">Επικοινωνία</a></li>
+                </ul>
+            </div>
+            <div id="header_social">
+                
+            </div>
+        </div>
+        <div id="about">
+        <p> <img src="images/me.jpg" style="padding:0 0 0px 0px;" align="right" width="100"/>
+        Ηλίας Χαλκίδης (Ilias Chalkidis)<br/>
+        Προπτυχιακός Φοιτητής, Τμήμα Πληροφορικής & Τηλ/νωνιών, ΕΚΠΑ<br/>
+        sdi0700122[at]di.uoa.gr <br/>&#160;<br/>
+        <a href="thesis.pdf">Πτυχιακή Εργασία - "Νομοθεσί@: Πλατφόρμα για την Ελληνική νομοθεσία", Ηλίας Χαλκίδης (PDF)</a><br/><br/><br/><br/><br/><br/>
+	</p>
+        <p>Γεννήθηκα στην Αθήνα, Αττικής στις 08/02/1990. Είμαι προπτυχιακός φοιτητής στο Τμήμα Πληροφορικής & Τηλεπικοινωνιών του Καποδιστριακού Πανεπιστημίου Αθηνών. Ήδη έχω φέρει εις
+            πέρας κάποια αξιόλογα projects που αφορούν την ανάπτυξη λογισμικού και επιδιώκω να ολοκληρώσω τις προπτυχιακές σπουδές φέτος.</p><br/> 
+            <p>Η συγκεκριμένη εφαρμογή παρουσιάζεται στα πλαίσια της πτυχιακής μου εργασίας με τίτλο "Νομοθεσία: Πλατφόρμας για την Ελληνική νομοθεσία" και αφορά την ανάπτυξη της συγκεκριμένης πλατφόρμας που σκοπό έχει την δημοσίευση – παρουσίαση της ελληνικής νομοθεσίας με χρήση των τεχνολογιών του Σημασιολογικού Ιστού
+(Semantic Web) ακολουθώντας το κίνημα των Ανοιχτών Δεδομένων (Open Data) με επιβλέποντες τον καθηγητή κ. <a href="http://cgi.di.uoa.gr/~koubarak/">Μανόλη Κουμπαράκη</a> και τον διδακτορικό φοιτητή <a href="http://cgi.di.uoa.gr/~charnik/">Χαράλαμπο Νικολάου</a>. Στα πλαίσια της πτυχιακής μου εργασίας και του γενικότερου επιστημονικού μου ενδιαφέροντος, μετά από σύσταση του καθηγητή κ.
+Μανόλη Κουμπαράκη, παρακολούθησα φέτος το συνέδριο <a href="https://joinup.ec.europa.eu/community/semic/event/semic-2014-semantic-interoperability-conference"> SEMIC 2014 (Semantic Interoperability Community) </a> και την ημερίδα “Παρουσίασης Εθνικού Σχεδίου Δράσης για την Ανοιχτή
+Διακυβέρνηση”.</p><br/>
+<p>Επιδιώκω να συνεχίσω την ερευνητική μου δραστηριότητα στο πεδίο της “Αναπαράστασης Νομικής Γνώσης με χρήση τεχνολογιών του Σημασιολογικού Ιστού” ως βοηθός του καθηγητή
+    κ. Μανόλη Κουμπαράκη και παράλληλα να συνεχίσω μεταπτυχιακές σπουδές στο τμήμα Πληροφορικής & Τηλεπικοινωνιών του ΕΚΠΑ.</p><br/><br/>
+<p><h3>Παρόμοιες πρωτοβουλίες στο εξωτερικό</h3><br/>
+    <a href="http://www.legislation.gov.uk/">http://www.legislation.gov.uk/ (Ηνωμένο Βασίλειο)</a><br/>
+    <a href="http://doc.metalex.eu/">http://www.metalex.eu/ (Ολλανδία)</a><br/>
+</p>
+    <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        </div>
+        <div id="footer" style="background-image:url('images/footer.jpg')">
+        <br/>
+        <br/>
+        <br/>
+        <h6>Τμήμα Πληροφορικής & Τηλ/νωνιών ΕΚΠΑ - Open Data&#160;&#160; <img src="images/rdf.png" width="15"/> </h6>
+        </div>
+    </div>
+</body>
+</html>

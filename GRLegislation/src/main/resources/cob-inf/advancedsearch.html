@@ -1,0 +1,198 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+ <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ΝΟΜΟΘΕΣΙ@</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Jura&amp;subset=latin,greek' rel='stylesheet' type='text/css'/>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js">//</script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">//</script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js">//</script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker({ 
+        dateFormat: 'yy-mm-dd',
+         closeText: 'Κλείσιμο',
+                prevText: 'Προηγούμενος',
+                nextText: 'Επόμενος',
+                currentText: 'Τρέχων Μήνας',
+                monthNames: ['Ιανουάριος','Φεβρουάριος','Μάρτιος','Απρίλιος','Μάιος','Ιούνιος',
+                'Ιούλιος','Αύγουστος','Σεπτέμβριος','Οκτώβριος','Νοέμβριος','Δεκέμβριος'],
+                monthNamesShort: ['Ιαν','Φεβ','Μαρ','Απρ','Μαι','Ιουν',
+                'Ιουλ','Αυγ','Σεπ','Οκτ','Νοε','Δεκ'],
+                dayNames: ['Κυριακή','Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο'],
+                dayNamesShort: ['Κυρ','Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ'],
+                dayNamesMin: ['Κυ','Δε','Τρ','Τε','Πε','Πα','Σα'],
+                weekHeader: 'Εβδ',
+                maxDate: '0'
+    
+    });
+         $( "#datepicker2" ).datepicker({ 
+        dateFormat: 'yy-mm-dd',
+         closeText: 'Κλείσιμο',
+                prevText: 'Προηγούμενος',
+                nextText: 'Επόμενος',
+                currentText: 'Τρέχων Μήνας',
+                monthNames: ['Ιανουάριος','Φεβρουάριος','Μάρτιος','Απρίλιος','Μάιος','Ιούνιος',
+                'Ιούλιος','Αύγουστος','Σεπτέμβριος','Οκτώβριος','Νοέμβριος','Δεκέμβριος'],
+                monthNamesShort: ['Ιαν','Φεβ','Μαρ','Απρ','Μαι','Ιουν',
+                'Ιουλ','Αυγ','Σεπ','Οκτ','Νοε','Δεκ'],
+                dayNames: ['Κυριακή','Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο'],
+                dayNamesShort: ['Κυρ','Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ'],
+                dayNamesMin: ['Κυ','Δε','Τρ','Τε','Πε','Πα','Σα'],
+                weekHeader: 'Εβδ',
+                maxDate: '0'
+    
+    });
+         $( "#datepicker3" ).datepicker({ 
+        dateFormat: 'yy-mm-dd',
+         closeText: 'Κλείσιμο',
+                prevText: 'Προηγούμενος',
+                nextText: 'Επόμενος',
+                currentText: 'Τρέχων Μήνας',
+                monthNames: ['Ιανουάριος','Φεβρουάριος','Μάρτιος','Απρίλιος','Μάιος','Ιούνιος',
+                'Ιούλιος','Αύγουστος','Σεπτέμβριος','Οκτώβριος','Νοέμβριος','Δεκέμβριος'],
+                monthNamesShort: ['Ιαν','Φεβ','Μαρ','Απρ','Μαι','Ιουν',
+                'Ιουλ','Αυγ','Σεπ','Οκτ','Νοε','Δεκ'],
+                dayNames: ['Κυριακή','Δευτέρα','Τρίτη','Τετάρτη','Πέμπτη','Παρασκευή','Σάββατο'],
+                dayNamesShort: ['Κυρ','Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ'],
+                dayNamesMin: ['Κυ','Δε','Τρ','Τε','Πε','Πα','Σα'],
+                weekHeader: 'Εβδ',
+                maxDate: '0'
+    
+    });
+  });
+</script>
+</head>
+<body style="background-image:url('images/background.png')">
+    <div id="wrapper">
+        <div id="header2" style="background-image:url('images/header.jpg')">
+            <div id="title"><h1>ΝΟΜΟΘΕΣΙ@</h1></div>
+            
+            <div id="header_menu">
+                <ul>
+                    <li><a href="./">Αρχική</a></li>
+                    <li><a href="developer">Πληροφορίες</a></li>
+                    <li><a href="about">Σχετικά</a></li>
+                    <li><a href="#">Επικοινωνία</a></li>
+                </ul>
+            </div>
+
+        </div>
+       
+        <div id="content">
+                <div id="content_advancedsearch">
+                <div id="middle_first3">
+                    <br/><br/>
+                <div style="text-align:center;"><h1 style="margin:auto;line-height:51px;vertical-align:middle;">ΠΡΟΧΩΡΗΜΕΝΗ ΑΝΑΖΗΤΗΣΗ</h1></div>
+                <br/>
+            <form action="search">    
+            <table border="0" style="font-size:medium;width: 950px">
+            <tr>
+            <td>Λέξεις - Κλειδιά:</td>
+            <td><input type="text" name="keywords" style="width: 205px;"/></td>
+            <td>&#160;</td>
+            <td>ΦΕΚ Κυκλοφορίας</td>
+            <td><select>
+              <option value="-">-</option>
+              <option value="a">Τεύχος Πρώτο (Α)</option>
+              <option value="b">Τεύχος Δεύτερο (Β)</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Τύπος νομοθεσίας:</td>
+            <td><select name="type">
+              <option value="-">-</option>
+              <option value="con">Σύνταγμα</option>
+              <option value="law">Νόμος</option>
+              <option value="pd">Προεδρικό Διάταγμα</option>
+              <option value="amc">Πράξη Υπουργικού Συμβουλίου</option>
+              <option value="la">Πράξη Νομοθετικού Περιεχομένου</option>
+              <option value="md">Υπουργική ΑΠόφαση</option>
+            </select></td>
+            <td>&#160;</td>
+            <td>Αριθμός ΦΕΚ</td>
+            <td><select name="fekyear">
+              <option>-</option>
+              <option value="2014">2014</option> 
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+            </select>&#160;/&#160;<input type="text" name="fekNumber" style="width: 110px"/></td>
+             <td>&#160;</td>
+            </tr>
+            <tr>
+            <td>Ημερομηνία Κυκλοφορίας:</td>
+            <td><input type="radio" name="datetype" value="a">&#160;Συγκεκριμένη</td>
+            <td>&#160;</td>
+            <td><input type="radio" name="datetype" value="b">&#160;Εύρος&#160;Απο:</td>
+            <td>&#160;Μέχρι:</td>
+            </tr>
+            <tr>
+            <td></td>
+            <td> <input type="text" id="datepicker" name="date"/></td>
+             <td>&#160;</td>
+            <td> <input type="text" id="datepicker2" name="date2"/></td>
+            <td> <input type="text" id="datepicker3" name="date3"/></td>
+            </tr>
+            <tr>
+            <td>Αριθμός Κυκλοφορίας:</td>
+            <td>
+            <select name="year">
+              <option>-</option>
+              <option value="2014">2014</option> 
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+            </select>
+            / <input type="text" name="id" style="width: 150px;"/>
+            </td>
+            </tr>
+            <tr>
+            <td></td>
+            <td></td>
+            <td>&#160;</td>
+            <td> <input type="submit" class="button" value="Αναζήτηση"/></td>
+            <td> <a href="advancedsearch"><button class="button">Επαναφορά</button></a></td>
+            </tr>
+            </table>
+            
+            </form>
+               <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            </div>
+                </div>
+           
+        </div>
+        <div id="footer" style="background-image:url('images/footer.jpg')">   
+        <br/>
+        <br/>
+        <br/>
+        <h6>Τμήμα Πληροφορικής &amp; Τηλ/νωνιών ΕΚΠΑ - Open Data</h6>
+        </div>
+    </div>
+
+</body>
+</html>

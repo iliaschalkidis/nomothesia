@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<map:sitemap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://apache.org/cocoon/sitemap/1.0 http://cocoon.apache.org/schema/sitemap/cocoon-sitemap-1.0.xsd"
+ xmlns:map="http://apache.org/cocoon/sitemap/1.0">
+
+  <!--+
+      | Definition of the control flow implementation.
+      +-->
+  <map:flow language="javascript"/>
+
+  <map:components>
+      <map:actions>
+            <map:action name="sparqlquery" src="com.kiddo.grlegislation.SparqlQueryAction"/>
+            <map:action name="upload" src="com.kiddo.grlegislation.UploadAction"/>
+      </map:actions>
+      <map:generators>
+        <map:generator name="searchgen" src="com.kiddo.grlegislation.SearchGenerator" />
+        <map:generator name="versiongen" src="com.kiddo.grlegislation.VersionGenerator" />
+        <map:generator name="rdfgen" src="com.kiddo.grlegislation.RDFGenerator" />
+
+      </map:generators>
+      <map:transformers>
+        <map:transformer name="xslt-saxon" pool-grow="2" pool-max="32" pool-min="8"
+            src="org.apache.cocoon.transformation.TraxTransformer">
+          <use-request-parameters>true</use-request-parameters>
+          <use-browser-capabilities-db>true</use-browser-capabilities-db>
+          <xslt-processor-role>saxon</xslt-processor-role>
+        </map:transformer>
+      </map:transformers>
+  </map:components>
+  
+  
+  <map:pipelines>
+
+    <map:pipeline id="home">
+      <map:match pattern="">
+        <map:read src="index.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="home">
+      <map:match pattern="home/en">
+        <map:read src="index_en.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="dev">
+      <map:match pattern="developer">
+        <map:read src="about.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="about">
+      <map:match pattern="about">
+        <map:read src="emeis.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="search">
+      <map:match pattern="search">            
+            <map:generate type="searchgen"/>
+            <map:transform src="search.xslt">
+                <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+            </map:transform>
+            <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="advancedsearch">
+      <map:match pattern="advancedsearch">
+        <map:read src="advancedsearch.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+   <!-- <map:pipeline id="sparqlendpoint">
+      <map:match pattern="sparql">
+        <map:act type="sparqlquery"/>  
+        <map:read src="sparql.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="upload">
+      <map:match pattern="upload">
+        <map:act type="upload"/>
+        <map:redirect-to uri=""/>
+      </map:match>
+    </map:pipeline>-->
+    
+    <!--+
+        | Default pipelines
+        +-->
+    <map:pipeline id="internal-resource" internal-only="true">
+      <!-- Put matchers for internal (accessible only to Cocoon blocks) resources here
+        More details: http://cocoon.zones.apache.org/daisy/cdocs-site-main/g2/1345.html -->
+      <map:match pattern="resource/internal/**">
+        <map:read src="resource/internal/{1}"/>
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="external-resource">
+      <!-- Put matchers for external (accessible to the outside world, e.g. browser) resources here.
+        More details: http://cocoon.zones.apache.org/daisy/cdocs-site-main/g2/1345.html -->
+      <map:match pattern="resource/external/**">
+        <map:read src="resource/external/{1}"/>
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="service">
+      <!-- Put your servlet service matchers here.
+        More details: http://cocoon.zones.apache.org/daisy/cdocs-site-main/g2/1345.html -->
+    </map:pipeline>
+    
+    
+    <!--+
+        | Nomothesi@ pipelines
+        +-->
+    <map:pipeline id="signer">
+      <map:match pattern="signer/1">
+        <map:read src="signer.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+
+    <map:pipeline id="signer">
+      <map:match pattern="signer/2">
+        <map:read src="signer2.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <!--LAW PIPELINES -->
+    
+    <map:pipeline id="law-plain">
+      <map:match pattern="law/*/*/enacted/plain">
+        <map:aggregate element="foo">
+            <map:part src="LAW{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_plain.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="lawcontents-enacted">
+      <map:match pattern="law/*/*/enacted/contents">
+        <map:aggregate element="foo">
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+    
+    <map:pipeline id="law/data">
+      <map:match pattern="law/*/*/enacted/data.xml">
+        <map:read src="LAW{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+
+     <map:pipeline id="lawtimeline-enacted">
+      <map:match pattern="law/*/*/enacted/timeline">
+        <map:aggregate element="foo">
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="lawcitations">
+      <map:match pattern="law/*/*/enacted/citations">
+        <map:aggregate element="foo">
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="lawenacted">
+      <map:match pattern="law/*/*/enacted">
+        <map:aggregate element="foo">
+            <map:part src="LAW{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="law/data">
+      <map:match pattern="law/*/*/data.rdf">
+        <map:generate type="rdfgen" >
+            <map:parameter name="type" value="law"/>
+            <map:parameter name="year" value="{1}"/>
+            <map:parameter name="id" value="{2}"/>        
+       </map:generate>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law/data">
+      <map:match pattern="law/*/*/data.xml">
+        <map:read src="LAW{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law-version-plain">
+      <map:match pattern="law/*/*/plain">
+       <map:aggregate element="foo">
+            <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_plain.xslt" type="xslt-saxon">
+           <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="law-date">
+      <map:match pattern="law/*/*/*-*-*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/date-law-{1}-{2}-{3}-{4}-{5}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law-version">
+      <map:match pattern="law/*/*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+                  <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="lawcontents">
+      <map:match pattern="law/*/*/contents">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+
+    <map:pipeline id="lawtimeline">
+      <map:match pattern="law/*/*/timeline">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law/data">
+      <map:match pattern="law/*/*/data.xml">
+        <map:read src="LAW{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law">
+      <map:match pattern="law/*/*/data.pdf">
+           <map:read src="LAW{1}{2}.pdf" mime-type="application/pdf"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="lawcitations">
+      <map:match pattern="law/*/*/citations">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="law-articleenacted">
+      <map:match pattern="law/*/*/enacted/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+             <map:parameter name="type" value="enacted"/>
+             <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    
+    
+    <map:pipeline id="law-article">
+      <map:match pattern="law/*/*/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-law-{1}-{2}"/>
+            <map:part src="LAW{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <!-- MD PIPELINE -->
+    <map:pipeline id="md-plain">
+      <map:match pattern="md/*/*/enacted/plain">
+        <map:aggregate element="foo">
+            <map:part src="MD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_plain.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="mdcontents-enacted">
+      <map:match pattern="md/*/*/enacted/contents">
+        <map:aggregate element="foo">
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+    
+    <map:pipeline id="md/data">
+      <map:match pattern="md/*/*/enacted/data.xml">
+        <map:read src="MD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+
+     <map:pipeline id="mdtimeline-enacted">
+      <map:match pattern="md/*/*/enacted/timeline">
+        <map:aggregate element="foo">
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="mdcitations">
+      <map:match pattern="md/*/*/enacted/citations">
+        <map:aggregate element="foo">
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="mdenacted">
+      <map:match pattern="md/*/*/enacted">
+        <map:aggregate element="foo">
+            <map:part src="MD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="md/data">
+      <map:match pattern="md/*/*/data.rdf">
+        <map:generate type="rdfgen" >
+            <map:parameter name="type" value="md"/>
+            <map:parameter name="year" value="{1}"/>
+            <map:parameter name="id" value="{2}"/>        
+       </map:generate>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md/data">
+      <map:match pattern="md/*/*/data.xml">
+        <map:read src="MD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md-version-plain">
+      <map:match pattern="md/*/*/plain">
+       <map:aggregate element="foo">
+            <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_plain.xslt" type="xslt-saxon">
+           <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="md-date">
+      <map:match pattern="md/*/*/*-*-*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/date-md-{1}-{2}-{3}-{4}-{5}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md-version">
+      <map:match pattern="md/*/*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+                  <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="mdcontents">
+      <map:match pattern="md/*/*/contents">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+
+    <map:pipeline id="mdtimeline">
+      <map:match pattern="md/*/*/timeline">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md/data">
+      <map:match pattern="md/*/*/data.xml">
+        <map:read src="MD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md">
+      <map:match pattern="md/*/*/data.pdf">
+           <map:read src="MD{1}{2}.pdf" mime-type="application/pdf"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="mdcitations">
+      <map:match pattern="md/*/*/citations">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md-articleenacted">
+      <map:match pattern="md/*/*/enacted/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+             <map:parameter name="type" value="enacted"/>
+             <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="md-article">
+      <map:match pattern="md/*/*/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-md-{1}-{2}"/>
+            <map:part src="MD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    
+    <!-- PD PIPELINES -->
+    <map:pipeline id="pd-plain">
+      <map:match pattern="pd/*/*/enacted/plain">
+        <map:aggregate element="foo">
+            <map:part src="PD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_plain.xslt" type="xslt-saxon">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pdcontents-enacted">
+      <map:match pattern="pd/*/*/enacted/contents">
+        <map:aggregate element="foo">
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+    
+    <map:pipeline id="pd/data">
+      <map:match pattern="pd/*/*/enacted/data.xml">
+        <map:read src="PD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+
+     <map:pipeline id="pdtimeline-enacted">
+      <map:match pattern="pd/*/*/enacted/timeline">
+        <map:aggregate element="foo">
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pdcitations">
+      <map:match pattern="pd/*/*/enacted/citations">
+        <map:aggregate element="foo">
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pdenacted">
+      <map:match pattern="pd/*/*/enacted">
+        <map:aggregate element="foo">
+            <map:part src="PD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type" value="enacted"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="pd/data">
+      <map:match pattern="pd/*/*/data.rdf">
+        <map:generate type="rdfgen" >
+            <map:parameter name="type" value="pd"/>
+            <map:parameter name="year" value="{1}"/>
+            <map:parameter name="id" value="{2}"/>        
+       </map:generate>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd/data">
+      <map:match pattern="pd/*/*/data.xml">
+        <map:read src="PD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd-version-plain">
+      <map:match pattern="pd/*/*/plain">
+       <map:aggregate element="foo">
+            <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_plain.xslt" type="xslt-saxon">
+           <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+     <map:pipeline id="pd-date">
+      <map:match pattern="pd/*/*/*-*-*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/date-pd-{1}-{2}-{3}-{4}-{5}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd-version">
+      <map:match pattern="pd/*/*">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+                  <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline>
+    <map:match pattern="date-*-*-*-*-*-*">
+      <map:generate type="versiongen">
+            <map:parameter name="type" value="{1}"/>
+            <map:parameter name="year" value="{2}"/>
+            <map:parameter name="id" value="{3}"/>  
+            <map:parameter name="yy" value="{4}"/> 
+            <map:parameter name="mm" value="{5}"/>
+            <map:parameter name="dd" value="{6}"/>  
+      </map:generate>
+      <map:serialize type="xml"/> 
+    </map:match> 
+    </map:pipeline>
+    
+    <map:pipeline>
+    <map:match pattern="version-*-*-*">
+      <map:generate type="versiongen">
+            <map:parameter name="type" value="{1}"/>
+            <map:parameter name="year" value="{2}"/>
+            <map:parameter name="id" value="{3}"/>        
+      </map:generate>
+      <map:serialize type="xml"/> 
+    </map:match> 
+    </map:pipeline>
+    
+    <map:pipeline id="pdcontents">
+      <map:match pattern="pd/*/*/contents">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_contents.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>  
+
+    <map:pipeline id="pdtimeline">
+      <map:match pattern="pd/*/*/timeline">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation_timeline.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd/data">
+      <map:match pattern="pd/*/*/data.xml">
+        <map:read src="PD{1}{2}.xml" mime-type="file"/>
+        <map:serialize type="xml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd">
+      <map:match pattern="pd/*/*/data.pdf">
+          <map:generate src="PD{1}{2}.xml"/>
+          <map:transform src="legislation-pdf.xslt"/>
+          <map:serialize type="fo2pdf"/>
+           <!--<map:read src="PD{1}{2}.pdf" mime-type="application/pdf"/>-->
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pdcitations">
+      <map:match pattern="pd/*/*/citations">
+        <map:aggregate element="foo">
+            <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml"/>
+        </map:aggregate>
+        <map:transform src="legislation_citations.xslt" type="xslt">
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd-articleenacted">
+      <map:match pattern="pd/*/*/enacted/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+             <map:parameter name="type" value="enacted"/>
+             <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pd-article">
+      <map:match pattern="pd/*/*/*/*">
+        <map:aggregate element="foo">
+             <map:part src="cocoon:/version-pd-{1}-{2}"/>
+            <map:part src="PD{1}{2}.xml" />
+        </map:aggregate>
+        <map:transform src="legislation_updated.xslt" type="xslt-saxon"/>
+        <map:transform src="legislation.xslt" type="xslt-saxon">
+            <map:parameter name="type1" value="{3}"/>
+            <map:parameter name="id1" value="{4}"/>
+            <map:parameter name="relative_path" value="{baselink:SitemapBaseLink}"/>
+        </map:transform>
+        <map:serialize type="xhtml"/>
+      </map:match>
+    </map:pipeline>
+    
+    <!-- RESOURCES FILES -->
+    
+    <map:pipeline>
+        <map:match pattern="css/*.css">
+            <map:read src="css/{1}.css" mime-type="text/css"/>
+        </map:match>
+    </map:pipeline>
+    
+    <map:pipeline>      
+    <map:match pattern="js/*.js">
+            <map:read src="js/{1}.js" mime-type="application/javascript"/>
+    </map:match>    
+    </map:pipeline>
+    
+    <map:pipeline>      
+    <map:match pattern="images/*.jpg">
+            <map:read src="images/{1}.jpg" mime-type="image/jpeg"/>
+    </map:match>  
+       
+    </map:pipeline>
+    
+    <map:pipeline>
+        <map:match pattern="images/*.png">
+            <map:read src="images/{1}.png" mime-type="image/png"/>
+        </map:match>  
+    </map:pipeline>
+
+     <map:pipeline>
+        <map:match pattern="*.html">
+            <map:read src="{1}.html" mime-type="text/html"/>
+            <map:serialize type="xhtml"/>
+        </map:match>
+    </map:pipeline>
+    
+    <map:pipeline id="pdf">
+      <map:match pattern="*.pdf">
+           <map:read src="{1}.pdf" mime-type="application/pdf"/>
+      </map:match>
+    </map:pipeline>
+    
+    <!-- ERRORS-->
+    
+    <map:handle-errors type="500">
+        <map:read src="error.html" mime-type="text/html"/>
+        <map:serialize type="xhtml"/>
+    </map:handle-errors>
+
+  </map:pipelines>
+  
+  
+
+</map:sitemap>

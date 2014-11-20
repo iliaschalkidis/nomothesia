@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Legislation DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40">
+    <Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+        <dc:identifier>http://localhost:8888/GRLegislation/pd/2013/40</dc:identifier>
+        <dc:title> Ηλεκτρονική κατάθεση δικογράφων, ηλεκτρονική χορήγηση σχετικών πιστοποιητικών και λοιπών εγγράφων στο Συμβούλιο της Επικρατείας και στα Τακτικά Διοικητικά Δικαστήρια.</dc:title>
+        <dc:type>text</dc:type>
+        <dc:format>text/xml</dc:format>
+        <dc:language>gr</dc:language>
+        <dc:created>2013-03-22</dc:created>
+        <diavgeia:fek>
+           <issue>ΤΕΥΧΟΣ Α'</issue>
+           <fekNumber>75</fekNumber>
+           <year>2013</year>
+        </diavgeia:fek>
+	<decisionType>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ)</decisionType>
+	<Number>40</Number>
+       <Year>2013</Year> 
+       <diavgeia:signer uid="1">
+			<diavgeia:firstName>ΚΑΡΟΛΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΠΑΠΟΥΛΙΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Πρόεδρος της Δημοκρατίας</diavgeia:title>
+			<diavgeia:position/>
+        </diavgeia:signer>
+	<diavgeia:signer uid="33494">
+			<diavgeia:firstName>ΑΝΤΩΝΙΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΡΟΥΠΑΚΙΩΤΗΣ</diavgeia:lastName>
+			<diavgeia:active>false</diavgeia:active>
+			<diavgeia:title>Υπουργός</diavgeia:title>
+            <diavgeia:position/>
+        </diavgeia:signer>
+	   <diavgeia:tag uid="80">
+		<diavgeia:label>Δικαστήρια</diavgeia:label>
+	   </diavgeia:tag>
+	   <diavgeia:tag uid="572">
+		<diavgeia:label>Εκδόσεις - Εκτυπώσεις</diavgeia:label>
+	   </diavgeia:tag>
+	   <diavgeia:organization uid="99200554">
+		<diavgeia:label>ΣΥΜΒΟΥΛΙΟ ΤΗΣ ΕΠΙΚΡΑΤΕΙΑΣ</diavgeia:label>
+		<diavgeia:latinName>ste</diavgeia:latinName>
+		<diavgeia:active>true</diavgeia:active>
+	   </diavgeia:organization>
+    </Metadata>
+    <Introduction>
+		
+    </Introduction> 
+    <Body DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/body">
+        <Article id="article-1" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1">
+            <Number>1</Number>
+            <Title>Διαδικασία ηλεκτρονικής κατάθεσης</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text> Δικηγόρος ή μέλος του Νομικού Συμβουλίου του Κράτους, που επιθυμεί να χρησιμοποιήσει τη διαδικασία ηλεκτρονικής κατάθεσης δικογράφου στο Συμβούλιο της Επικρατείας και στα Τακτικά Διοικητικά Δικαστήρια: </Text>
+                </P2>
+                <List>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/1"><Value>α</Value><Text>εισάγει στο προαναφερόμενο Ενιαίο Πληροφοριακό Σύστημα Δικηγορικών Συλλόγων το μοναδικό αναγνω− ριστικό και συνθηματικό που του έχουν χορηγηθεί για αναγνώριση του από το Πληροφοριακό Σύστημα, ώστε να επιβεβαιωθούν στη συνέχεια τα υπόλοιπα προσωπικά στοιχεία του,</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/2"><Value>β</Value><Text>επιλέγει το αρμόδιο δικαστήριο,</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/3"><Value>γ</Value><Text>καταχωρίζει τα στοιχεία που του ζητούνται,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/4"><Value>δ</Value><Text>προσδιορίζει τον προς χρήση του επιθυμητό αριθμό αντιγράφων του δικογράφου που πρόκειται να καταθέσει,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/5"><Value>ε</Value><Text>επιλέγει την κατηγορία και το είδος του δικογράφου από τους αντίστοιχους πίνακες και συμπληρώνει τα στοιχεία των διαδίκων ή του εντολέα του, σύμφωνα με τους όρους που καθορίζονται από την εκάστοτε ισχύουσα νομοθεσία,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/2/case/6"><Value>στ</Value><Text>εάν συντρέχει περίπτωση, πραγματοποιεί την ηλεκτρονική πληρωμή, των εκάστοτε προβλεπομένων τελών, ενσήμων, παραβόλων και εν γένει δαπανημάτων και καταβάλλει τα εκ μέρους του αρμοδίου δικαστηρίου έξοδα αναπαραγωγής σε χαρτί τριών αντιγράφων του δικογράφου. Μετά τη δέσμευση των αντίστοιχων ποσών από τον τραπεζικό λογαριασμό του καταθέτοντος, κατευθύνεται προς την εφαρμογή του δηλωθέντος, κατά την κατάθεση, ως αρμοδίου δικαστηρίου.</Text></Case>
+					</List>   
+            </P>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Στην εφαρμογή του δικαστηρίου ο δικηγόρος ή το μέλος του Νομικού Συμβουλίου του Κράτους συμπληρώνει τα υποχρεωτικά και προαιρετικά πεδία που του ζητούνται και, μετά την ολοκλήρωση της καταχώρισης όλων των αναγκαίων στοιχείων, επισυνάπτει το δικόγραφο σε ηλεκτρονική μορφή το οποίο πρέπει να φέρει την προηγμένη ηλεκτρονική υπογραφή του και το αποστέλλει.</Text>
+                </P2> 
+				<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/2/passage/2">
+                    <Number>2</Number>
+                    <Text>Επισυνάπτει επίσης αντίγραφο της προσβαλλόμενης διοικητικής πράξης ή της δικαστικής απόφασης σε ηλεκτρονική μορφή εφόσον υπάρχει στην κατοχή του. Ως προς τη μορφή και τον όγκο των σχετικών αρχείων έχουν εφαρμογή οι διατάξεις της παρ. 2 του άρθρου 3 του παρόντος.</Text>
+                </P2> 
+            </P>   
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Η διαδικασία ολοκληρώνεται με την αποστολή από το Πληροφοριακό Σύστημα του δικαστηρίου, στην ηλεκτρονική διεύθυνση που ο καταθέτων έχει δηλώσει ή στην ηλεκτρονική θυρίδα που έχει δημιουργηθεί γι’ αυτόν στο Πληροφοριακό Σύστημα του δικαστηρίου, του αποδεικτικού καταθέσεως το οποίο πρέπει να φέρει προηγμένη ηλεκτρονική υπογραφή, καθώς και των αντιγράφων που έχει ζητήσει.</Text>
+                </P2> 
+				<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/3/passage/2">
+                    <Number>2</Number>
+                    <Text>Το αποδεικτικό καταθέσεως μνημονεύει, εκτός των στοιχείων που αναφέρονται στις οικείες διατάξεις, την ημερομηνία και την ώρα της κατάθεσης. Ως χρόνος καταθέσεως θεωρείται η ημερομηνία και ώρα της αποστολής του αποδεικτικού καταθέσεως.</Text>
+                </P2>
+				<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/3/passage/3">
+                    <Number>3</Number>
+                    <Text>Τα ρολόγια των εξυπηρετητών που εμπλέκονται στην ηλεκτρονική κατάθεση συγχρονίζονται περιοδικά με εξυπηρετητές ή διαδικτυακές συσκευές που λειτουργούν ως σημείο αναφοράς ώρας.</Text>
+                </P2> 
+            </P>  
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/4">
+                <Number>4</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/4/passage/1">
+                    <Number>1</Number>
+                    <Text> Τα δικόγραφα και τα αποδεικτικά κατάθεσης που φέρουν προηγμένη ηλεκτρονική υπογραφή, τα οποία έχουν αποσταλεί σύμφωνα με τις προηγούμενες παρα− γράφους και εκτυπώνονται από τον δικηγόρο, το μέλος του Νομικού Συμβουλίου του Κράτους ή τη γραμματεία του δικαστηρίου, λογίζονται ως επίσημα αντίγραφα του πρωτοτύπου.</Text>
+                </P2> 
+            </P>  
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/5">
+                <Number>5</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/1/paragraph/5/passage/1">
+                    <Number>1</Number>
+                    <Text> Μέχρι να ρυθμιστεί η ηλεκτρονική καταβολή του υπέρ του Δημοσίου παραβόλου, ο καταθέτων υποχρε− ούται να το καταβάλει σύμφωνα με τη διαδικασία και τις προϋποθέσεις που ορίζονται στις οικείες διατάξεις.</Text>
+                </P2> 
+            </P>     
+        </Article>
+        <Article id="article-2" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2">
+            <Number>2</Number>
+            <Title>Αρμοδιότητες Δικηγορικών Συλλόγων</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/passage/1"> 
+                    <Number>1</Number>
+                    <Text>Ο αρμόδιος Δικηγορικός Σύλλογος στο πλαίσιο της κατά το προηγούμενο άρθρο διαδικασίας:</Text>
+                </P2>
+                <List>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/case/1"><Value>α</Value><Text>ταυτοποιεί τον δικηγόρο, διαπιστώνει την έλλειψη ασυμβιβάστου ή άλλου κωλύματος ή πειθαρχικής κύρωσης και του επιτρέπει να συνεχίσει τη διαδικασία κατάθεσης, </Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/case/2"><Value>β</Value><Text>υποστηρίζει τεχνικά τις συναλλαγές για την κατα− βολή των προβλεπομένων οικονομικών επιβαρύνσεων με την επιφύλαξη της παραγράφου 5 του άρθρου 1,</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/case/3"><Value>γ</Value><Text>διενεργεί την ηλεκτρονική είσπραξη των αντίστοιχων ποσών, τον ακριβή επιμερισμό και απόδοσή τους στους δικαιούχους φορείς,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/case/4"><Value>δ</Value><Text>διαβιβάζει τα απαιτούμενα νομιμοποιητικά στοιχεία στο αρμόδιο δικαστήριο ώστε να επιτραπεί στον πιστοποιούμενο δικηγόρο ή μέλος του Νομικού Συμβουλίου του Κράτους να ολοκληρώσει την ηλεκτρονική κατάθεση και</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/2/paragraph/1/case/5"><Value>ε</Value><Text>εισπράττει τα έξοδα αναπαραγωγής σε χαρτί των αντιγράφων του δικογράφου, που ανέρχονται σε 0,10 ευρώ ανά σελίδα, και αποδίδει σε μηνιαία βάση τα ποσά αυτά στο οικείο δικαστήριο.</Text></Case>
+					</List>
+            </P>            
+        </Article>
+        <Article id="article-3" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3">
+            <Number>3</Number>
+            <Title>Αρμοδιότητες Γραμματείας Δικαστηρίων</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/passage/1"> 
+                    <Number>1</Number>
+                    <Text> Η Γραμματεία των αναφερομένων στην παρ. 1 του άρθρου 1 δικαστηρίων, στην οποία κατατίθεται ηλεκτρονικά το δικόγραφο, προβαίνει στις ακόλουθες ενέργειες:</Text>
+                </P2>
+                <List>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/1"><Value>α</Value><Text>υποδέχεται από το Ενιαίο Πληροφοριακό Σύστημα των Δικηγορικών Συλλόγων όλες τις απαιτούμενες πληροφορίες που διασφαλίζουν την εγκυρότητα της επιχειρούμενης κατάθεσης,</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/2"><Value>β</Value><Text>υποδέχεται το συνημμένο δικόγραφο,</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/3"><Value>γ</Value><Text>ελέγχει την προηγμένη ηλεκτρονική υπογραφή,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/4"><Value>δ</Value><Text>αποστέλλει τα αντίγραφα που ζητήθηκαν μαζί με το αποδεικτικό κατάθεσης,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/5"><Value>ε</Value><Text>ενημερώνει το Ενιαίο Πληροφοριακό Σύστημα Δικηγορικών Συλλόγων για την κατάθεση του δικογράφου, στ. παρέχει καθημερινώς τις υπηρεσίες ηλεκτρονικής κατάθεσης από το Πληροφοριακό Σύστημα που διαθέτει, εκτός από την καθορισμένη ώρα καθημερινής συντήρησης και λήψης αντιγράφων (back up), εφ’ όσον τα Πλη− ροφοριακά Συστήματα που εμπλέκονται στη διαδικασία ηλεκτρονικής κατάθεσης δεν είναι εκτός λειτουργίας για λόγους συντήρησης ή για οποιονδήποτε άλλο λόγο και</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/5"><Value>ζ</Value><Text>εξασφαλίζει στους πληρεξούσιους δικηγόρους ή μέλη του Νομικού Συμβουλίου του Κράτους την δυνατότητα ηλεκτρονικής παρακολούθησης της εξέλιξης της διαδικασίας,</Text></Case>
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/1/case/5"><Value>η</Value><Text> παρέχει στους δικαιούμενους προς τούτο πληρεξούσιους δικηγόρους ή μέλη του Νομικού Συμβουλίου του Κράτους ηλεκτρονικό αντίγραφο των δικαστικών αποφάσεων το οποίο πρέπει να φέρει προηγμένη υπογραφή.</Text></Case>
+					</List>
+            </P>      
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text> Η σύνδεση με τις παραπάνω ιστοσελίδες γίνεται μέσω ασφαλούς πρωτοκόλλου. Τα επισυναπτόμενα έγγραφα , όπως εισαγωγικά δικόγραφα, υπομνήματα και άλλα σχετικά έγγραφα, πρέπει να είναι είτε σε Portable Document Format (PDF) είτε σε μορφή κειμένου Microsoft Word (doc ή docx) έκδοσης 2003 και μεταγενέστερα, είτε σε Open Document Format for Office Applications (ODF). Στην ιστοσελίδα κάθε δικαστηρίου αναρτώνται οι μορφές των ηλεκτρονικών εγγράφων που γίνονται αποδεκτές από το Ολοκληρωμένο Πληροφοριακό Σύστημά του. Αν επισυνάπτεται αρχείο εικόνας, ήχου ή άλλο πολυμέσο, αυτό πρέπει να είναι ενσωματωμένο σε ένα από τα παραπάνω έγγραφα, υπό τον όρο ότι το συνολικό μέγεθος του αρχείου δεν υπερβαίνει τον όγκο που καθορίζεται από το Ολοκληρωμένο Πληροφοριακό Σύστημα του δικαστηρίου. Σχετική ενημέρωση αναρτάται, επίσης, στην ιστοσελίδα του.</Text>
+                </P2>  
+            </P>  
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/3/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Αν κατά την κατάθεση δεν έχουν καταβληθεί τα έξοδα αναπαραγωγής αντιγράφων κατά τα οριζόμενα στο άρθρο 1 παρ.1 περίπτ. στ΄, ο καταθέτων πρέπει να προσκομίσει ή να αποστείλει στο δικαστήριο, μέσα σε είκοσι ημέρες από την επιτυχή ολοκλήρωση της διαδικασίας του άρθρου 1, τρία αντίγραφα του δικογράφου σε έντυπη μορφή καθώς και αντίγραφο της προσβαλλόμενης πράξης ή δικαστικής απόφασης, εφόσον η υποχρέωση αυτή προβλέπεται από τις οικείες δικονομικές διατάξεις.</Text>
+                </P2>  
+            </P>  
+        </Article>
+        <Article id="article-4" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4">
+            <Number>4</Number>
+            <Title>Χορήγηση πιστοποιητικών</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Το Συμβούλιο της Επικρατείας και τα τακτικά διοικητικά δικαστήρια μπορούν να χορηγούν σε ψηφιακή μορφή αποφάσεις, πιστοποιητικά, βεβαιώσεις ή άλλα έγγραφα, εφ’ όσον η χορήγησή τους προβλέπεται από τις οικείες διατάξεις, μετά από αίτηση δικηγόρου ή μέλους του Νομικού Συμβουλίου του Κράτους.</Text>
+                </P2>
+            </P>
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Ο αιτών δικηγόρος ή μέλος του Ν.Σ.Κ. καταχωρίζει τα αναγκαία για την ταυτοποίησή του στοιχεία, πραγ− ματοποιεί την ηλεκτρονική πληρωμή των προβλεπόμε− νων για τη σήμανση της αίτησης και του ζητούμενου εγγράφου δαπανημάτων, όπως οι παραπάνω ενέργειες καθορίζονται στο άρθρο 1 του παρόντος, επισυνάπτει την αίτηση που φέρει προηγμένη ηλεκτρονική υπογραφή και την αποστέλλει στο αρμόδιο δικαστήριο.</Text>
+                </P2>
+            </P>
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Το δικαστήριο αποστέλλει το αιτηθέν έγγραφο σε ψηφιακή μορφή με προηγμένη ηλεκτρονική υπογραφή. Το έγγραφο αυτό με προηγμένη ηλεκτρονική υπογραφή, που εκτυπώνεται, λογίζεται ως επίσημο αντίγραφο του πρωτοτύπου. Η ενέργεια της αποστολής καταγράφεται ηλεκτρονικά.</Text>
+                </P2>
+            </P>
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/4">
+                <Number>4</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/4/paragraph/4/passage/1">
+                    <Number>1</Number>
+                    <Text> Αίτηση για τη χορήγηση πιστοποιητικών, βεβαιώσεων ή άλλων εγγράφων μπορεί να απευθύνει προς τα ως άνω δικαστήρια σε ηλεκτρονική μορφή κάθε πολίτης, χωρίς να προβεί σε ηλεκτρονική πληρωμή της προβλεπόμενης σήμανσης. Το αιτηθέν έγγραφο χορηγείται σε έντυπη μορφή από την οικεία Γραμματεία και κατά την παραλαβή από τον αιτούντα καταβάλλονται τα προβλεπόμενα δαπανήματα.</Text>
+                </P2>
+            </P>
+        </Article>
+        <Article id="article-5" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/5">
+            <Number>5</Number>
+            <Title>Ενημέρωση</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/5/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/5/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Αν δεν ολοκληρωθεί επιτυχώς η κατάθεση το σύστημα ενημερώνει αυτόματα τον καταθέτοντα.</Text>
+                </P2>
+            </P>
+        </Article>
+        <Article id="article-6" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/6">
+            <Number>6</Number>
+			<Title>Έναρξη εφαρμογής της διαδικασίας</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/6/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/6/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η ημερομηνία έναρξης της διαδικασίας ηλεκτρονικής καταθέσεως και της χορήγησης πιστοποιητικών και εγγράφων καθορίζεται, για μεν το Συμβούλιο της Επικρατείας με απόφαση του Προέδρου του, για δε τα τακτικά διοικητικά δικαστήρια με απόφαση του Γενικού Επιτρόπου της Επικρατείας των τακτικών διοικητικών δικαστηρίων για καθένα από τα δικαστήρια αυτά. Οι σχετικές αποφάσεις αναρτώνται στους πίνακες ανακοινώσεων των οικείων δικαστικών καταστημάτων.</Text>
+                </P2>
+            </P>
+        </Article>  
+		<Article id="article-7" DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/7">
+            <Number>7</Number>
+			<Title>Iσχύς</Title>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/7/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2013/40/article/7/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η ισχύς του παρόντος Διατάγματος αρχίζει από τη δημοσίευσή του στην Εφημερίδα της Κυβερνήσεως. Στον Υπουργό Δικαιοσύνης, Διαφάνειας και Ανθρωπίνων Δικαιωμάτων αναθέτουμε τη δημοσίευση και εκτέλεση του παρόντος διατάγματος.</Text>
+                </P2>
+            </P>
+        </Article>
+    </Body>
+</Legislation>
