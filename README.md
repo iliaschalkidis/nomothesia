@@ -1,12 +1,6 @@
-#NOMOTHESI@ PLATFORM 1.0 READ ME
-===============================
+#Nomothesi@ Platform 1.0 Instructions
 
-Author: Ilias Chalkidis
-AM: 1115200700122
-Email: sdi0700122@di.uoa.gr
-
-##SOFTWARE/LIBRARY DEPENDENCIES
-=============================
+##Software / Library Dependencies
 
 Java Version: Java™ SE 7
 Build Tool: Apache Maven 3.2.1
@@ -14,16 +8,15 @@ Web Server: Apache Tomcat 7 (Suggested) / Jetty Server 6.1.7
 RDFStore: Sesame Server 2.7.9
 XML DB Server: BaseX 7.8.2
 
-INSTALLATION
-============
+##Installation
 
 The project of Nomothesi@ platform is compressed in nomothesia-1.0.0.war file. The .war file in folder /webapps needs to be deployed in a Web Application Server (Apache Tomcat, Jetty) and also collaborates / communicates with 2 external web applications Sesame and BaseX, which also needs to be deployed. We will give instructions of how-to complete installation. After completing installation, you can browse Nomothesi@ platform at http://localhost:8080/nomothesia-1.0.0/GRLegislation/.
 
-1. Apache Tomcat (http://tomcat.apache.org/)
+1. ###Apache Tomcat (http://tomcat.apache.org/)
 
 Apache Tomcat can be downloaded here (http://tomcat.apache.org/download-70.cgi), depends to the operating system and its distribution. You can find installation instructions here (http://tomcat.apache.org/tomcat-7.0-doc/setup.html). After installation, you can point your browser at this location (http://localhost:8080/) to verify that the deployment succeeded. The easiest way to deploy Nomothesi@ Platform is placing GRLegislation.war in Tomcat's folder /webbapps. You can find information of how-to deploy an application here (http://tomcat.apache.org/tomcat-7.0-doc/deployer-howto.html)
 
-2. Sesame Server (http://www.openrdf.org/)
+2. ###Sesame Server (http://www.openrdf.org/)
 
 Sesame Server can be downloaded here (http://sourceforge.net/projects/sesame/files/Sesame%202/2.7.11/openrdf-sesame-2.7.11-sdk.zip/download). You can also find the .war files in /webapps folder. The war files needs to be deployed in Apache Tomcat. The easiest way to deploy this application is to place the .war files in webapps folder of Apache Tomcat and restart it. After you have deployed the Sesame Server webapp, you should be able to access it, by default, at path /openrdf-sesame. You can point your browser at this location to verify that the deployment succeeded. You can also manage repositories from the OpenRDF Workbench, which should be available at path /openrdf-workbench.
 
@@ -31,7 +24,7 @@ For the purposes of our project, you need to visit /openrdf-workbench create a n
 
 Any additional information for downloading, installing and interacting with Sesame Server can be found in the website's user's documentation. 
 
-3. BaseX XML DB Server (http://basex.org/)
+3. ###BaseX XML DB Server (http://basex.org/)
 
 BaseX XML DB Server can be downloaded here (http://files.basex.org/releases/7.8.2/BaseX782.war). You can also find the .war file in /webapps folder. Like Sesame, the war file needs to be deployed in Apache Tomcat. The easiest way to deploy this application is to place the .war file in webapps folder of Apache Tomcat and restart it. After you have deployed the BaseX XML DB Server, you should be able to access it, by default, at path /BaseX782. You can point your browser at this location to verify that the deployment succeeded.
 
@@ -39,8 +32,8 @@ Currently our XML repository is stored in the filesystem, so there is no need fo
 
 Any additional information for downloading, installing and interacting with BaseX XML DB Server can be found in the website's user's documentation. There are also some useful Java examples at http://docs.basex.org/wiki/Java_Examples, which really helps to understand how it works.
 
-BUILD ALONE
-============
+##Build up
+
 
 In case you would like to adjust the code, feel free. In order to use GRLegislation block as dependency you need to install it. First go through terminal to GRLegislation/ directory and execute the following command:
 
@@ -54,8 +47,7 @@ If everything is fine again, you will get a build report message concluding BUIL
 
 You can find additional information for our project below. You can find any additional information about Apache Cocoon at http://cocoon.apache.org/2.2/1159_1_1.html for blocks' construction and at http://cocoon.apache.org/2.2/1362_1_1.html for web application's deployment.
 
-CONFIGURATION FILE
-==================
+##Configuration
 
 There is a possibility that you need to configure Nomothesi@. For this purpose there is a configuration file called properties.properties, which specify the following information:
 
