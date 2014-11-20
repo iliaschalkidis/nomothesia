@@ -87,6 +87,7 @@ A Serializer is responsible for transforming SAX events to a presentation format
 
 The functionality of these 3 parts is combined in pipelines, which are placed in the sitemap, like this:
 
+```
 <map:pipeline id="search">
       <map:match pattern="search">            
             <map:generate type="searchgen"/>
@@ -94,6 +95,7 @@ The functionality of these 3 parts is combined in pipelines, which are placed in
             <map:serialize type="xhtml"/>
       </map:match>
 </map:pipeline>
+```
 
 Each request matches the appropriate pattern (eg /search). Then the generator (eg searchgen), which are Java classes, act as a Controller to handle the requested function. Generator creates our models(XML files) and push them to the transformer, or just load ready-made models (XML files). We can have multiple generators (e.g. one to load a data model and an other one to create an other data model). The transformers, which are XSLT stylesheets, can act either a Controller either as a View, which means some of them update the model's state and the last one (e.g. search.xslt) creates an output representation for the user. At last, serializer (e.g. XHTML)  is responsible for transforming the output of the last transformer to a presentation format.
 
