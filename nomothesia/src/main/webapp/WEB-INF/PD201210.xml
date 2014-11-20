@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Legislation DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10">
+    <Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+        <dc:identifier>http://localhost:8888/GRLegislation/pd/2012/10</dc:identifier>
+        <dc:title>Τροποποίηση του υπ’ αριθμ. 54/2011 Προεδρικού Διατάγματος «Σύσταση Ειδικής Υπηρεσίας Δημοσίων Έργων Αντιπλημμυρικής Προστασίας της Κοιλάδας του ποταμού Έβρου και των παραποτάμων του (ΕΥΔΕ ΕΒΡΟΥ)» (Α΄ 135).</dc:title>
+        <dc:type>text</dc:type>
+        <dc:format>text/xml</dc:format>
+        <dc:language>gr</dc:language>
+        <dc:created>2012-01-30</dc:created>
+		<diavgeia:fek>
+           <issue>ΤΕΥΧΟΣ A'</issue>
+           <fekNumber>13</fekNumber>
+           <year>2012</year>
+       </diavgeia:fek>
+	   <decisionType>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ)</decisionType>
+	   <Number>10</Number>
+       <Year>2012</Year>
+       <Type>pd</Type>
+       <diavgeia:signer uid="26390">
+			<diavgeia:firstName>ΙΩΑΝΝΗΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΜΑΓΚΡΙΩΤΗΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υφυπουργός Υποδομών, Μεταφορών &amp; Δικτύων</diavgeia:title>
+			<diavgeia:position/>
+	   </diavgeia:signer>
+	   <diavgeia:signer uid="1">
+			<diavgeia:firstName>ΚΑΡΟΛΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΠΑΠΟΥΛΙΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Πρόεδρος της Δημοκρατίας</diavgeia:title>
+	   <diavgeia:position/>
+           </diavgeia:signer>
+	   <diavgeia:tag>
+		<diavgeia:label>Περιβάλλον και Φυσικοί Πόροι</diavgeia:label>
+	   </diavgeia:tag>
+           <diavgeia:tag>
+		<diavgeia:label>Υδατικοί πόροι</diavgeia:label>
+	   </diavgeia:tag>
+    </Metadata>
+    <Introduction>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1977/679/article/5/paragraph/1">
+			<Number>1</Number>
+			<Text>Της παρ. 1 του άρθρου 5 του Ν. 679/1977, «Περί αυξήσεως θέσεων προσωπικού του Υπουργείου Δημοσίων Έργων και ρυθμίσεως συναφών θεμάτων» (Α΄ 245) όπως τα δύο τελευταία εδάφια της παραγράφου αυτής τροποποιήθηκαν και συμπληρώθηκαν με την παρ. 1, του άρθρου 23 του Ν. 1418/1984 (Α΄ 23)</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1977/679/article/8">
+			<Number>2</Number>
+			<Text> Του άρθρου 8 του Ν. 679/1977 (Α΄ 245), όπως αυτές τροποποιήθηκαν και συμπληρώθηκαν με τις παραγράφους 2 και 3 του άρθρου 5 του Ν. 2229/1994 (Α΄ 138), σύμφωνα με τις οποίες θα καλυφθεί η προκαλούμενη από το διάταγμα δαπάνη.</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/pd/2005/63/article/1">
+			<Number>3</Number>
+			<Text>Του άρθρου 90 του Κώδικα που κυρώθηκε με το άρθρο πρώτο του Π.Δ/τος 63/2005 «Κωδικοποίηση της Νομοθεσίας για την Κυβέρνηση και τα Κυβερνητικά Όργανα» (Α΄ 98).</Text>
+		</Citation>
+		<Citation>
+			<Number>4</Number>
+			<Text> Το γεγονός ότι από τις διατάξεις του παρόντος δεν προκαλείται δαπάνη σε βάρος του κρατικού προϋπολογισμού.</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1997/2469/article/1/paragraph/4">
+			<Number>5</Number>
+			<Text>Τις διατάξεις του άρθρου 6 παρ. 2 του Π.Δ. 189/2009 «Καθορισμός και ανακατανομή αρμοδιοτήτων των Υπουργείων» (Α ́ 221).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/pd/2009/189">
+			<Number>6</Number>
+			<Text>Τις διατάξεις του Π.Δ. 189/2009 «Καθορισμός και ανακατανομή αρμοδιοτήτων των Υπουργείων» (Α΄ 221).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/md/2009/2876">
+			<Number>5</Number>
+			<Text>Την αριθ. 2876/7−10−2009 απόφαση του Πρωθυπουργού «Αλλαγή τίτλου Υπουργείων» (Β΄ 2234).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/md/2011/110">
+			<Number>5</Number>
+			<Text>Το 110/2011 ΠΔ «Διορισμός Αντιπροέδρων της Κυβέρνησης, Υπουργών, Αναπληρωτών Υπουργών και Υφυπουργών» (Α ́ 243).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/md/2011/8172">
+			<Number>5</Number>
+			<Text>Την υπ’ αριθμ. 8172/6.12.2011 απόφαση του Πρωθυπουργού και του Υπουργού Υποδομών, Μεταφορών και Δικτύων «Ανάθεση αρμοδιοτήτων στον Υφυπουργό Υποδομών Μεταφορών και Δικτύων Ιωάννη Μαγκριώτη (Β ́ 2795).</Text>
+		</Citation>
+		<Citation>
+			<Number>5</Number>
+			<Text>Την αριθμ. 6/2012 γνωμοδότηση του Συμβουλίου της Επικρατείας, μετά από πρόταση του Υφυπουργού Υποδομών, Μεταφορών και Δικτύων</Text>
+		</Citation>
+    </Introduction> 
+    <Body DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/body">
+        <Article id="article-1" DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1">
+            <Number>1</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Μετά το τέλος της παραγράφου 1 του άρθρου 1 Π.Δ. 54/2011 προστίθεται εδάφιο ως εξής:</Text>
+                </P2>
+				<Modification DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/modification/1" Reference="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/1/passage/2">
+					<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/1/passage/2">
+						<Number>1</Number>
+						<Text>Η συντήρηση των έργων αυτών παραμένει στις αρμοδιότητες της Περιφέρειας Ανατολ. Μακεδονίας και Θράκης σύμφωνα με τις διατάξεις του ν. 3852/2010 (ΦΕΚ Α΄ 87 ).</Text>
+					</P2>
+				</Modification>
+            </P>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Η παρ. 3 του άρθρου 1 του ΠΔ 54/2011 αντικαθίσταται ως εξής:</Text>
+                </P2> 
+				<Modification DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/modification/2" Reference="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/3">
+					<P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/3">
+					<Number>3</Number>
+						<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/3/passage/1">
+							<Number>1</Number>
+							<Text>Έδρα της ΕΥΔΕ ΕΒΡΟΥ ορίζεται η Αλεξανδρούπολη και η διάρκεια λειτουργίας της ορίζεται οκταετής από την έναρξη ισχύος του παρόντος Προεδρικού Διατάγματος</Text>
+						</P2>
+					</P>
+				</Modification>
+            </P>  
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Η περίπτ. β του άρθρου 2 του ΠΔ 54/2011 αντικαθίσταται ως εξής:</Text>
+                </P2> 
+				<Modification DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/modification/3" Reference="http://localhost:8888/GRLegislation/pd/2011/54/article/2/case/2">
+					<Case DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/1/case/2"><Value>β</Value><Text>Τμήμα Κατασκευών, με αρμοδιότητα για όλα τα θέματα που αφορούν στην κατασκευή των έργων</Text></Case>
+				</Modification>
+            </P>    
+			<P DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/4">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/1/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Η παρ. 1 του άρθρου 3 του ΠΔ 54/2011 αντικαθίσταται ως εξής:</Text>
+                </P2> 
+				<Modification DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/modification/4" Reference="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1">
+					<P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1">
+					<Number>2</Number>
+						<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1/passage/1">
+							<Number>1</Number>
+							<Text>Της ΕΥΔΕ και των Τμημάτων Μελετών και Κατασκευών, προΐστανται υπάλληλοι κλάδου ΠΕ Πολιτικών Μηχανικών ή Αγρονόμων − Τοπογράφων Μηχανικών ή Μηχανολόγων Μηχανικών.</Text>
+						</P2>
+						 <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1/passage/2">
+							<Number>2</Number>
+							<Text>Του τμήματος Διοικητικού − Οικονομικού προΐσταται υπάλληλος του κλάδου ΠΕ Διοικητικού − Οικονομικού.</Text>
+						</P2>	
+					</P>
+				</Modification>
+            </P>  
+        </Article>
+        <Article id="article-2" DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/2">
+            <Number>2</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/2/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/2/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η ισχύς του παρόντος Διατάγματος αρχίζει από τη δημοσίευσή του στην Εφημερίδα της Κυβερνήσεως.</Text>
+                </P2>
+				<P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2012/10/article/2/paragraph/1/passage/2">
+                    <Number>2</Number>
+                    <Text>Στον Υπουργό Υποδομών, Μεταφορών και Δικτύων αναθέτουμε τη δημοσίευση και εκτέλεση του παρόντος Διατάγματος.</Text>
+                </P2>
+            </P>     
+        </Article>
+    </Body>
+</Legislation>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Legislation DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/">
+<Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+<dc:identifier>http://localhost:8888/GRLegislation/law/2014/4229</dc:identifier>
+<dc:title>Άδεια εγκατάστασης και λειτουργίας χώρου παραστάσεων − Άδεια παράστασης και άλλες διατάξεις.</dc:title>
+<dc:type>text</dc:type>
+<dc:format>text/xml</dc:format>
+<dc:language>gr</dc:language>
+<dc:created>2014-01-10</dc:created>
+<diavgeia:fek>
+<issue>ΤΕΥΧΟΣ Α'</issue><fekNumber>8</fekNumber><year>2014</year>
+</diavgeia:fek>
+<decisionType>ΝΟΜΟΣ</decisionType>
+<Number>4229</Number>
+<Year>2014</Year>
+<Type>pd</Type>
+<diavgeia:signer uid="2">
+                <diavgeia:firstName>ΧΑΡΑΛΑΜΠΟΣ</diavgeia:firstName>
+                <diavgeia:lastName>ΑΘΑΝΑΣΙΟΥ</diavgeia:lastName>
+                <diavgeia:active>true</diavgeia:active>
+                <diavgeia:title>Υπουργός</diavgeia:title>
+                <diavgeia:position/>
+</diavgeia:signer>
+<diavgeia:signer uid="1">
+			<diavgeia:firstName>ΚΑΡΟΛΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΠΑΠΟΥΛΙΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Πρόεδρος της Δημοκρατίας</diavgeia:title>
+	   <diavgeia:position/>
+</diavgeia:signer>
+<diavgeia:signer uid="2">
+                <diavgeia:firstName>ΙΩΑΝΝΗΣ</diavgeia:firstName>
+                <diavgeia:lastName>ΣΤΟΥΡΝΑΡΑΣ</diavgeia:lastName>
+                <diavgeia:active>true</diavgeia:active>
+                <diavgeia:title>Υπουργός</diavgeia:title>
+                <diavgeia:position/>
+</diavgeia:signer>
+<diavgeia:tag>
+		<diavgeia:label>Πολιτισμός και δημιουργία</diavgeia:label>
+</diavgeia:tag>
+<diavgeia:tag>
+		<diavgeia:label>Εγκαταστάσεις ψυχαγωγίας</diavgeia:label>
+</diavgeia:tag>
+</Metadata>
+<Introduction>
+</Introduction>
+<Body DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/body">
+<Article DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/1">
+<Number>1</Number>
+<Title>Πεδίο εφαρμογής</Title>
+<P DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/1/paragraph/1">
+<Number>1</Number>
+<P2 DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/1/paragraph/0/passage/1">
+<Number>1</Number>
+<Text>Με τις διατάξεις του παρόντος ρυθμίζονται οι προϋποθέσεις και η διαδικασία χορήγησης άδειας για τη χρήση χώρων συνάθροισης κοινού, στους οποίους δίνονται θεατρικές, χορευτικές ή μουσικές παραστάσεις ή παρουσιάζονται άλλα, παρεμφερούς μορφής, οπτικοακουστικά δρώμενα. Οι διατάξεις του παρόντος δεν εφαρμόζονται στα κέντρα διασκέδασης και σε παραστάσεις που διενεργούνται σε υπαίθριους μη περιφραγμένους χώρους.</Text>
+</P2>
+</P>
+</Article>
+<Article DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/2">
+<Number>2</Number>
+<Title>Ορισμοί</Title>
+<P DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/2/paragraph/2">
+<Number>2</Number>
+<P2 DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/2/paragraph/1/passage/2">
+<Number>2</Number>
+<Text>Για τους σκοπούς του παρόντος νόμου ισχύουν οι εξής ορισμοί:
+1. Άδεια εγκατάστασης και λειτουργίας χώρου παραστάσεων (ή άδεια εγκατάστασης και λειτουργίας): η εκτελεστή διοικητική πράξη με την οποία πιστοποιείται ότι ένας χώρος πληροί τις απαιτήσεις της πολεοδομικής νομοθεσίας για τη διενέργεια παραστάσεων με ασφάλεια των εργαζομένων και του κοινού, χωρίς να προκαλείται
+όχληση στους περίοικους, ενώ παράλληλα προσδιορίζεται με αυτήν ο μέγιστος πληθυσμός του χώρου.
+2. Άδεια παράστασης: η εκτελεστή διοικητική πράξη, με την οποία προσδιορίζεται ο μέγιστος πληθυσμός και πιστοποιείται ότι μία παράσταση που θα δοθεί σε συγκεκριμένες ημερομηνίες, σε οριζόμενο χώρο, στεγασμένο ή υπαίθριο περιφραγμένο, για τον οποίο δεν έχει εκδοθεί άδεια εγκατάστασης και λειτουργίας μπορεί να πραγματοποιηθεί υπό συνθήκες ασφάλειας των εργαζομένων και του κοινού και χωρίς να προκαλείται όχληση στους περιοίκους.
+3. Μέγιστος πληθυσμός: ο μέγιστος επιτρεπόμενος αριθμός προσώπων (εργαζομένων – κοινού) χώρου ή παράστασης βάσει των προβλεπόμενων μέτρων ασφαλείας, όπως καθορίζεται στο π.δ. 71/1988.</Text>
+</P2>
+</P>
+</Article>
+<Article DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/3">
+<Number>3</Number>
+<Title>Επιτρεπόμενοι χώροι παραστάσεων</Title>
+<P DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/3/paragraph/3">
+<Number>3</Number>
+<P2 DocumentURI="http://localhost:8888/GRLegislation/law/2014/4229/article/3/paragraph/2/passage/3">
+<Number>3</Number>
+<Text>1. Παράσταση επιτρέπεται να γίνεται σε θέατρο ή χώρο, για τον οποίο έχει εκδοθεί άδεια εγκατάστασης και λειτουργίας και μέσα στο πλαίσιο που ορίζει η σχετική άδεια. Κατ’ εξαίρεση, παράσταση επιτρέπεται να γίνει και σε χώρο για τον οποίο δεν έχει εκδοθεί άδεια εγκατάστασης και λειτουργίας, εφόσον χορηγηθεί άδεια παράστασης.
+2. Σε περίπτωση πολυχώρου, εκδίδεται ενιαία άδεια για όλους τους χώρους παραστάσεων. Ο έλεγχος των κριτηρίων γίνεται για κάθε χώρο χωριστά.
+3. Δεν απαιτείται άδεια εγκατάστασης και λειτουργίας ή άδεια παράστασης για παραστάσεις που δίνονται σε αδειοδοτημένους χώρους συνάθροισης κοινού με μέγιστο πληθυσμό μικρότερο των 50 ατόμων.</Text>
+</P2>
+</P>
+</Article>
+</Body>
+</Legislation>

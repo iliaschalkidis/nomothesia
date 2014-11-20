@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Legislation DocumentURI="http://www.et.gr/md/2013/2/">
+    <Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+        <dc:identifier>http://www.et.gr/md/2013/2/</dc:identifier>
+        <dc:title>Κατάργηση της δημόσιας επιχείρησης «Ελληνική Ραδιοφωνία − Τηλεόραση, Ανώνυμη Εταιρεία (ΕΡΤ − Α.Ε.)».</dc:title>
+        <dc:type>text</dc:type>
+        <dc:format>text/xml</dc:format>
+        <dc:language>gr</dc:language>
+        <dc:created>2013-06-11</dc:created>
+        <diavgeia:fek>
+           <issue>ΤΕΥΧΟΣ Β'</issue>
+           <fekNumber>1414</fekNumber>
+           <year>2013</year>
+        </diavgeia:fek>
+	<diavgeia:decisionType uid="2">
+			<diavgeia:label>ΚΥΑ (ΚΟΙΝΗ ΥΠΟΥΡΓΙΚΗ ΑΠΟΦΑΣΗ )</diavgeia:label>
+	</diavgeia:decisionType>
+	<Number>2</Number>
+       <Year>2013</Year> 
+       <diavgeia:signer uid="26390">
+			<diavgeia:firstName>ΙΩΑΝΝΗΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΣΤΟΥΡΝΑΡΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υπουργός</diavgeia:title>
+			<diavgeia:position/>
+        </diavgeia:signer>
+	<diavgeia:signer uid="33494">
+			<diavgeia:firstName>ΣΥΜΕΩΝ</diavgeia:firstName>
+			<diavgeia:lastName>ΚΕΔΙΚΟΓΛΟΥ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υφυπουργός</diavgeia:title>
+                        <diavgeia:position/>
+        </diavgeia:signer>
+	   <diavgeia:tag uid="97">
+		<diavgeia:label>Οργάνωση δημοσίων φορέων</diavgeia:label>
+	   </diavgeia:tag>
+	   <diavgeia:tag uid="130">
+		<diavgeia:label>Μέσα και τύπος</diavgeia:label>
+	   </diavgeia:tag>
+	   <diavgeia:organization uid="99200121">
+		<diavgeia:label>ΕΡΤ ΑΕ</diavgeia:label>
+		<diavgeia:latinName>ertsa</diavgeia:latinName>
+		<diavgeia:active>true</diavgeia:active>
+	   </diavgeia:organization>
+    </Metadata>
+    <Introduction>
+		
+    </Introduction> 
+    <Body DocumentURI="http://www.et.gr/md/2013/2/body">
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/1">
+            <Number>1</Number>
+            <Title>Κατάργηση της δημόσιας επιχείρησης «Ελληνική Ραδιοφωνία− Τηλεόραση, Ανώνυμη Εταιρεία (ΕΡΤ − Α.Ε.)» και διακοπή λειτουργίας</Title>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/1/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/1/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η Ελληνική Ραδιοφωνία − Τηλεόραση, Ανώνυμη Εται− ρεία (ΕΡΤ−Α.Ε.), που ιδρύθηκε με τον Ν. 1730/1987 (Α ́ 145) ως ενιαίος φορέας, καταργείται.</Text>
+                </P2>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/1/paragraph/1/passage/2">
+                    <Number>2</Number>
+                    <Text>Επίσης, καταργούνται οι θυγατρικές εταιρείες που έχουν συσταθεί από την ΕΡΤ− Α.Ε.</Text>
+                </P2>    
+            </P>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/1/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/1/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Η μετάδοση ραδιοτηλεοπτικών εκπομπών, η κυκλοφορία εκδόσεων, η λειτουργία διαδικτυακών ιστότοπων όπως και κάθε άλλη δραστηριότητα της ΕΡΤ − Α.Ε. και των θυγατρικών αυτής, διακόπτονται μετά το τέλος του κανονικού προγράμματος της 11ης Ιουνίου 2013 και έως τη σύσταση νέου φορέα, που θα υπηρετεί το δημόσιο συμφέρον στο πλαίσιο της τήρησης αρχών που συνά− δουν με τους όρους της διαφάνειας και της χρηστής διαχείρισης εντός του ανταγωνιστικού ραδιοτηλεοπτι− κού περιβάλλοντος.</Text>
+                </P2> 
+            </P>            
+        </Article>
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/2">
+            <Number>2</Number>
+            <Title>Τύχη περιουσίας της ΕΡΤ − Α.Ε. και διαδοχή δικαιωμάτων και υποχρεώσεων</Title>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Το σύνολο των στοιχείων του ενεργητικού και παθητικού της ΕΡΤ − Α.Ε. και των θυγατρικών της, περιλαμβανομένων των πάσης φύσεως δικαιωμάτων, αξιώσεων και υποχρεώσεων μεταβιβάζονται αυτοδικαίως από τη δημοσίευση της παρούσας και χωρίς καμία άλλη διατύπωση στο Δημόσιο, εκπροσωπούμενο από τον Υπουργό Οικονομικών.</Text>
+                </P2>
+            </P>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/2/passage/1"> 
+                    <Number>1</Number>
+                    <Text>Το Δημόσιο καθίσταται διάδοχος του συνόλου των δικαιωμάτων και υποχρεώσεων σύμφωνα με τα οριζόμενα στην προηγούμενη παράγραφο.Ειδικότερα:</Text>
+                </P2>
+                <List>
+                <Case DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/2/case/1">Η μεταβίβαση των περιουσιακών στοιχείων της ΕΡΤ − Α.Ε. και των θυγατρικών της στο Δημόσιο και κάθε άλλη πράξη που συνδέεται με αυτήν απαλλάσσεται από κάθε φόρο, εισφορά ή τέλος.</Case>
+                <Case DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/2/case/2">Οι συχνότητες της ΕΡΤ−Α.Ε. παραμένουν ανενεργές έως τη σύσταση του νέου φορέα, οπότε και μεταφέρονται σε αυτόν αυτοδικαίως.</Case>
+                <Case DocumentURI="http://www.et.gr/md/2013/2/article/2/paragraph/2/case/3">Εκκρεμείς δίκες με διάδικο την ΕΡΤ − Α.Ε. και τις θυγατρικές της, συνεχίζονται στο όνομα του Ελληνικού Δημοσίου, ως διαδόχου της ΕΡΤ − Α.Ε. και των θυγατρικών της, χωρίς άλλη διατύπωση, χωρίς να επέρχεται βίαιη διακοπή τους και χωρίς να απαιτείται δήλωση περί επαναλήψεώς τους.</Case>
+                </List>
+            </P>            
+        </Article>
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/3">
+            <Number>3</Number>
+            <Title>Ρυθμίσεις για τις εργασιακές σχέσεις</Title>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Οι συμβάσεις εργασίας του απασχολούμενου με οποιονδήποτε τρόπο προσωπικού, όπως το τακτικό και έκτακτο προσωπικό ή άλλο προσωπικό καθώς και κάθε είδους συμβάσεις έργου ή εργασίας με εξωτερικούς ή άλλους συνεργάτες προγράμματος της ΕΡΤ− Α.Ε, και των θυγατρικών εταιρειών της λύονται από τη δημοσίευση της παρούσας. </Text>
+                </P2>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/1/passage/2">
+                    <Number>2</Number>
+                    <Text>Για τις περιπτώσεις τις οποίες αφορά, η παρούσα απόφαση συνιστά και καταγγελία της ατομικής συμβάσεως εργασίας.</Text>
+                </P2>
+            </P>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Το προσωπικό της προηγούμενης παραγράφου δικαιούται την νόμιμη κατά περίπτωση, σύμφωνα με τις κείμενες διατάξεις, αποζημίωση.</Text>
+                </P2>  
+            </P>  
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/3/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>Από τη δημοσίευση της παρούσας αίρονται αυτοδικαίως οι αποσπάσεις του πάσης φύσεως προσωπικού της καταργηθείσας ανώνυμης εταιρείας ΕΡΤ− Α.Ε. και των θυγατρικών της, που υπηρετούν σε άλλους φορείς.</Text>
+                </P2>  
+            </P>  
+        </Article>
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/4">
+            <Number>4</Number>
+            <Title>Διοικητικό Συμβούλιο</Title>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/4/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/4/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η θητεία του Διευθύνοντος Συμβούλου και του Δ.Σ. της Ελληνικής Ραδιοφωνίας −Τηλεόρασης, Ανώνυμη Εταιρεία (ΕΡΤ−Α.Ε.) και η θητεία όλων των οργάνων διοίκησης των θυγατρικών εταιρειών λήγει από την ημερομηνία δημοσίευσης της παρούσης αποφάσεως, αζημίως για το Δημόσιο.</Text>
+                </P2>
+            </P>
+        </Article>
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/5">
+            <Number>5</Number>
+            <Title>Ανταποδοτικό τέλος</Title>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/5/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/5/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η είσπραξη του ανταποδοτικού τέλους (εισφορά) υπέρ της ΕΡΤ− Α.Ε., που εισπράττεται μέσω των λογαριασμών της ΔΕΗ, βάσει του <a>ν. 1730/1987</a>, αναστέλλεται από τη δημοσίευση της παρούσας αποφάσεως και έως τη σύσταση νέου φορέα παροχής της δημόσιας ραδιοτηλεοπτικής υπηρεσίας.</Text>
+                </P2>
+            </P>
+        </Article>
+        <Article DocumentURI="http://www.et.gr/md/2013/2/article/6">
+            <Number>6</Number>
+            <P DocumentURI="http://www.et.gr/md/2013/2/article/6/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/6/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>́Οπου στις κείμενες διατάξεις αναφέρεται ΕΡΤ − Α.Ε. ή οι θυγατρικές της νοείται εφεξής το Ελληνικό Δημόσιο.</Text>
+                </P2>
+                <P2 DocumentURI="http://www.et.gr/md/2013/2/article/6/paragraph/1/passage/2">
+                    <Number>2</Number>
+                    <Text>Η απόφαση αυτή να δημοσιευθεί στην Εφημερίδα της Κυβερνήσεως.</Text>
+                </P2>
+            </P>
+        </Article>  
+    </Body>
+</Legislation>

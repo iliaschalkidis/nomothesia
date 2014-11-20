@@ -1,0 +1,257 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ΝΟΜΟΘΕΣΙ@</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Jura&subset=latin,greek' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script>
+  $(function() {
+    var myPos = [ $(window).width() / 4, 170 ];
+
+    $("#dialog").dialog({ autoOpen: false, minHeight: 350, minWidth: 600, position: myPos });
+ 
+        $("#contact").click(
+            function () {
+                $("#dialog").dialog('open');
+                return false;
+            }
+        );
+        
+    $(window).resize(function(){
+  $('#container').css({
+    position:'absolute',
+    left: ($(window).width() - $('#body').outerWidth())/2,
+    top: ($(window).height() - $('#body').outerHeight())/2
+  });
+  
+});
+
+// To initially run the function:
+$(window).resize();
+
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  });
+  
+  $(document).ready(function(){
+  $('#trends').dataTable({
+       aaSorting: [[ 2, "desc" ]],
+       bSortable: true,
+      "iDisplayLength": 4,
+       aoColumnDefs: [
+            { "aTargets": [ 0 ], "bSortable": true },
+            { "aTargets": [ 1 ], "bSortable": true },
+            { "aTargets": [ 2 ], "bSortable": true }
+        ],
+      "bLengthChange": false,
+      "oLanguage": {
+			"sLengthMenu": "Εμφάνισε _MENU_ εγγραφές ",
+			"sZeroRecords": "Δεν βρέθηκε τίποτα",
+			"sInfo": "Εμφανίζει από _START_ μέχρι _END_ των _TOTAL_ εγγραφών",
+			"sInfoEmpty": "Εμφανίζει 0 εγγραφές",
+			"sInfoFiltered": "(φιλτραρισμένες _MAX_ συνολικά εγγραφές)",
+                        "sSearch": "Αναζήτηση",
+                        "oPaginate": {
+                                    "sNext": "Επόμενη",
+                                     "sPrevious": "Προηγούμενη"
+                         }
+		}
+  });
+  $('#new').dataTable({
+       aaSorting: [[ 2, "desc" ]],
+       bSortable: true,
+      "iDisplayLength": 4,
+       aoColumnDefs: [
+            { "aTargets": [ 0 ], "bSortable": true },
+            { "aTargets": [ 1 ], "bSortable": true },
+            { "aTargets": [ 2 ], "bSortable": true }
+        ],
+      "bLengthChange": false,
+      "oLanguage": {
+			"sLengthMenu": "Εμφάνισε _MENU_ εγγραφές ",
+			"sZeroRecords": "Δεν βρέθηκε τίποτα",
+			"sInfo": "Εμφανίζει από _START_ μέχρι _END_ των _TOTAL_ εγγραφών",
+			"sInfoEmpty": "Εμφανίζει 0 εγγραφές",
+			"sInfoFiltered": "(φιλτραρισμένες _MAX_ συνολικά εγγραφές)",
+                        "sSearch": "Αναζήτηση",
+                        "oPaginate": {
+                                    "sNext": "Επόμενη",
+                                     "sPrevious": "Προηγούμενη"
+                         }
+		}
+  });
+  
+  $( "#tabs" ).tabs();
+  
+});
+</script>
+</head>
+<body style="background-image:url('images/background3.jpg')">
+    <div id="dialog" title="Φόρμα Επικοινωνίας">
+        <p> <img src="images/me.jpg" style="padding:0 0 0px 0px;" align="right" width="100"/>
+        Ηλίας Χαλκίδης (Ilias Chalkidis)<br/>
+        Προπτυχιακός Φοιτητής, Τμήμα Πληροφορικής & Τηλ/νωνιών, ΕΚΠΑ<br/>
+        sdi0700122[at]di.uoa.gr
+	</p>
+    </div>
+    <div id="wrapper">
+        <div id="header" style="background-image:url('images/header.jpg')">
+            <div id="title"><h1>ΝΟΜΟΘΕΣΙ@</h1></div>
+            <div id="header_locale">
+                <table>
+                    <tr>
+                        <td>
+                            gr
+                        </td>
+                        <td>
+                            /
+                        </td>
+                        <td>
+                            en
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="header_menu">
+                <ul>
+                    <li><a href="./">Αρχική</a></li>
+                    <li><a href="developer">Πληροφορίες</a></li>
+                    <li><a href="about">Σχετικά</a></li>
+                    <li><a id="contact" href="#">Επικοινωνία</a></li>
+                </ul>
+            </div>
+            <div id="header_social">
+            </div>
+        </div>
+        <div id="middle" style="background-image:url('images/middle.jpg')">
+            <div id="middle_first">
+            <form action="search">    
+            <table border="0">
+            <tr>
+            <td>Λέξεις - Κλειδιά:</td>
+            <td><input type="text" name="keywords" title="Χωρίστε τις λέξεις με κόμμα (,)" style="width: 270px;"/></td>
+            </tr>
+            <tr>
+            <td>Τύπος νομοθεσίας:</td>
+            <td><select name="type">
+              <option>-</option>
+              <option value="con">Σύνταγμα</option>
+              <option value="law">Νόμος</option>
+              <option value="pd">Προεδρικό Διάταγμα (ΠΔ)</option>
+              <option value="amc">Πράξη Υπουργικού Συμβουλίου (ΠΥΣ)</option>
+              <option value="la">Πράξη Νομοθετικού Περιεχομένου (ΠΝΠ)</option>
+              <option value="md">Κοινή Υπουργική Απόφαση (ΚΥΑ)</option>
+              <option value="md">Υπουργική Απόφαση (ΥΑ)</option>
+            </select></td>
+            </tr>
+            <tr>
+            <td>Αριθμός Κυκλοφορίας:</td>
+            <td>
+            <select name="year">
+                <option>-</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+            </select>
+            / <input type="text" name="id" style="width: 205px;"/>
+            </td>
+            </tr>
+            <tr>
+            <td>Ημερομηνία Κυκλοφορίας:</td>
+            <td> <input type="text" id="datepicker" title="Επιλέξτε ημερομηνία με την βοήθεια του παραθύρου" name="date"/></td>
+            </tr>
+            <tr>
+            <td></td>
+            <td> <br/></td>
+            </tr>
+            <tr>
+            <td><div class="button2" ><a href="advancedsearch">Προχωρημένη Αναζήτηση</a></div></td>
+            <td> <input type="submit" class="button" value="Αναζήτηση"/></td>
+            </tr>
+            </table>
+            
+            </form>
+            </div>
+        </div>
+        <div id="content">
+            
+            <div id="tabs">
+                <ul>
+                <li><a href="#tabs-1">Δημοφιλείς Αναζητήσεις</a></li>
+                <li><a href="#tabs-2">Πρόσφατες Δημοσιεύσεις</a></li>
+                </ul>
+                <div id="tabs-1">
+                <table id="trends" style="text-align: justify; text-justify: distribute;">
+                <thead>
+                    <tr>
+                        <th>Τίτλος</th>
+                        <th>Κωδικός</th>
+                        <th>Ημερομήνια</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td><a href="pd/2011/54" >Σύσταση Ειδικής Υπηρεσίας Δημοσίων Έργων Αντιπλημμυρικής προστασίας της Κοιλάδας του ποταμού Έβρου και των παραποτάμων του (ΕΥΔΕ ΕΒΡΟΥ)</a></td>
+                        <td>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ) 2011/54</td>
+                        <td>2011-05-20</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pd/2012/10" >Τροποποίηση του υπ’ αριθμ. 54/2011 Προεδρικού Διατάγματος «Σύσταση Ειδικής Υπηρεσίας Δημοσίων Έργων Αντιπλημμυρικής Προστασίας της Κοιλάδας του ποταμού Έβρου και των παραποτάμων του (ΕΥΔΕ ΕΒΡΟΥ)» (Α΄ 135)</a></td>
+                        <td>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ) 2012/10</td>
+                        <td>2012-01-30</td>
+                    </tr>
+                    <tr>
+                        <td><a href="pd/2013/40" >Ηλεκτρονική κατάθεση δικογράφων, ηλεκτρονική χορήγηση σχετικών πιστοποιητικών και λοιπών εγγράφων στο Συμβούλιο της Επικρατείας και στα Τακτικά Διοικητικά Δικαστήρια</a></td>
+                        <td>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ) 2013/40</td>
+                        <td>2013-03-22</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div id="tabs-2">
+                <table id="new" style="text-align: justify; text-justify:inter-word;">
+                <thead>
+                    <tr>
+                        <th>Τίτλος</th>
+                        <th>Κωδικός</th>
+                        <th>Ημερομήνια</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="md/2013/F2">Κατάργηση της δημόσιας επιχείρησης «Ελληνική Ραδιοφωνία− Τηλεόραση, Ανώνυμη Εταιρεία (ΕΡΤ − Α.Ε.)» και διακοπή λειτουργίας</a></td>
+                        <td>ΚΥΑ (ΚΟΙΝΗ ΥΠΟΥΡΓΙΚΗ ΑΠΟΦΑΣΗ ) 2013/02</td>
+                        <td>2013-06-11</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+            <div id="content_main" style="text-align: justify; text-justify:inter-word;"><h6>
+                <p><img src="images/opendata.png" style="padding:0 0 5px 10px;" align="right" width="300"/>&#160;&#160;&#160;&#160; Την τελευταία δεκαετία, πολλές χώρες έχουν παράσχει στο κοινό απευθείας διαδικτυακή (web) πρό- σβαση στην νομοθεσία (legislation). Διάφορα νομοθετικά διαδικτυακά συστήματα παρέχουν πρόσβαση στην νομοθεσία μέσω αναζήτησης θεμα- τικής, καθώς επίσης και λεκτικής ή χρονολογικής χρησιμοποιώντας δια- φορετικά μοντέλα δεδομένων (data models).</p>
+                <p>&#160;&#160;&#160;&#160; Στόχος της παρούσας εργασίας είναι με βάση την διεθνή πρακτική, να σχεδιάσει ένα τέτοιο πληροφοριακό σύστημα για την ελληνική νομοθεσία και να το υλοποιήσει σε δοκιμαστική μορφή (demo), ευελπιστώντας ότι θα θέσει ένα θεμέλιο για την συζήτηση γύρω από την αναπαράσταση νομικής πληροφορίας (νομοθεσίας) και την εντάξη της στο χώρο των "Ανοιχτών Δεδομένων" στην Ελλάδα.</p>
+                <p>&#160;&#160;&#160;&#160; Το εγχείρημα έχει ως πρόεκταση την ενίσχυση της διαφάνειας και του δικαιώματος στην πληροφόρηση μέσα από την ιδέα των "Ανοιχτών Δεδομένων". Αυτό γίνεται περισσότερο αντιληπτό όταν αναγνωρίσουμε τους χρήστες τέτοιων συστημάτων. Οι άνθρωποι που χρησιμοποιούν δημόσιες διαδικτυακές υπηρεσίες νομοθεσίας δεν είναι γενικά οι δικηγόροι, αλλά προέρχονται από μια πολύ ευρύτερη ομάδα ανθρώπων που πρέπει να γνωρίζουν, να παραθέτουν, ή να χρησιμοποιήουν τη νομοθεσία ως μέρος της εργασίας τους. Είναι δημόσιοι υπάλληλοι, ελεύθεροι επαγγελματίες, απλοί καθημερινοί πολίτες που υπερασπίζονται τα δικαιώματά τους. Είναι οι άνθρωποι που πρέπει να ξέρουν τι λέει ο νόμος, και που μέχρι σήμερα χρησιμοποιούν για αυτόν τον σκοπό υπηρεσίες όπως το Google. Όλοι αυτοί έχουν να αποκομήσουν άμεσα οφέλη από τέτοια συστήματα.</p></h6>
+                
+                
+            </div>
+        </div>
+        <div id="footer" style="background-image:url('images/footer.jpg')">   
+        <br/>
+        <br/>
+        <br/>
+        <h6>Τμήμα Πληροφορικής &amp; Τηλ/νωνιών ΕΚΠΑ - Open Data&#160;&#160; <img src="images/rdf.png" width="15"/> </h6>
+        </div>
+
+</body>
+</html>

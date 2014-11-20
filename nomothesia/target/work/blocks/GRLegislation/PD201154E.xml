@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Legislation DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/">
+    <Metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+        <dc:identifier>http://localhost:8888/GRLegislation/pd/2011/54</dc:identifier>
+        <dc:title>Σύσταση Ειδικής Υπηρεσίας Δημοσίων Έργων Αντιπλημμυρικής προστασίας της Κοιλάδας του ποταμού Έβρου και των παραποτάμων του (ΕΥΔΕ ΕΒΡΟΥ)</dc:title>
+        <dc:type>text</dc:type>
+        <dc:format>text/xml</dc:format>
+        <dc:language>gr</dc:language>
+        <dc:created>2011-05-20</dc:created>
+	<diavgeia:fek>
+           <issue>ΤΕΥΧΟΣ A'</issue>
+           <fekNumber>135</fekNumber>
+           <year>2011</year>
+       </diavgeia:fek>
+	   <diavgeia:decisionType uid="2">
+			<diavgeia:label>ΠΔ (ΠΡΟΕΔΡΙΚΟ ΔΙΑΤΑΓΜΑ)</diavgeia:label>
+	   </diavgeia:decisionType>
+	   <Number>54</Number>
+       <Year>2011</Year> 
+       <diavgeia:signer uid="26390">
+			<diavgeia:firstName>ΦΙΛΙΠΠΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΣΑΧΙΝΙΔΗΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υφυπουργός Οικονομικών</diavgeia:title>
+			<diavgeia:position/>
+	   </diavgeia:signer>
+	   <diavgeia:signer uid="26390">
+			<diavgeia:firstName>ΠΑΝΑΓΙΩΤΗΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΡΗΓΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υφυπουργός Οικονομίας, Ανταγωνιστικότητας &amp;Ναυτιλίας</diavgeia:title>
+			<diavgeia:position/>
+	   </diavgeia:signer>
+	   <diavgeia:signer uid="26390">
+			<diavgeia:firstName>ΙΩΑΝΝΗΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΜΑΓΚΡΙΩΤΗΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Υφυπουργός Υποδομών, Μεταφορών &amp; Δικτύων</diavgeia:title>
+			<diavgeia:position/>
+	   </diavgeia:signer>
+	   <diavgeia:signer uid="1">
+			<diavgeia:firstName>ΚΑΡΟΛΟΣ</diavgeia:firstName>
+			<diavgeia:lastName>ΠΑΠΟΥΛΙΑΣ</diavgeia:lastName>
+			<diavgeia:active>true</diavgeia:active>
+			<diavgeia:title>Πρόεδρος της Δημοκρατίας</diavgeia:title>
+	   <diavgeia:position/>
+           </diavgeia:signer>
+	   <diavgeia:tag>
+		<diavgeia:label>Περιβάλλον και Φυσικοί Πόροι</diavgeia:label>
+	   </diavgeia:tag>
+           <diavgeia:tag>
+		<diavgeia:label>Υδατικοί πόροι</diavgeia:label>
+	   </diavgeia:tag>
+    </Metadata>
+    <Introduction>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1977/679/article/5/paragraph/1">
+			<Number>1</Number>
+			<Text>Της παρ. 1 του άρθρου 5 του Ν. 679/1977, «Περί αυξήσεως θέσεων προσωπικού του Υπουργείου Δημοσίων Έργων και ρυθμίσεως συναφών θεμάτων» (Α΄ 245) όπως τα δύο τελευταία εδάφια της παραγράφου αυτής τροποποιήθηκαν και συμπληρώθηκαν με την παρ. 1, του άρθρου 23 του Ν. 1418/1984 (Α΄ 23)</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1977/679/article/8">
+			<Number>2</Number>
+			<Text> Του άρθρου 8 του Ν. 679/1977 (Α΄ 245), όπως αυτές τροποποιήθηκαν και συμπληρώθηκαν με τις παραγράφους 2 και 3 του άρθρου 5 του Ν. 2229/1994 (Α΄ 138), σύμφωνα με τις οποίες θα καλυφθεί η προκαλούμενη από το διάταγμα δαπάνη.</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/pd/2005/63/article/1">
+			<Number>3</Number>
+			<Text>Του άρθρου 90 του Κώδικα που κυρώθηκε με το άρθρο πρώτο του Π.Δ/τος 63/2005 «Κωδικοποίηση της Νομοθεσίας για την Κυβέρνηση και τα Κυβερνητικά Όργανα» (Α΄ 98).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1995/2362/article/22/paragraph/3">
+			<Number>4</Number>
+			<Text> Της παρ. 3 του άρθρου 22 του Ν. 2362/1995 «περί Δημοσίου Λογιστικού ελέγχου των δαπανών του Κράτους και άλλες διατάξεις» (Α΄ 247).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/law/1997/2469/article/1/paragraph/4">
+			<Number>5</Number>
+			<Text>Της παρ. 4 του άρθρου 1 του Ν. 2469/1997 «Περιορισμός και βελτίωση της αποτελεσματικότητας των κρατικών δαπανών και άλλες διατάξεις» (Α΄ 38).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/pd/2009/189">
+			<Number>6</Number>
+			<Text>Τις διατάξεις του Π.Δ. 189/2009 «Καθορισμός και ανακατανομή αρμοδιοτήτων των Υπουργείων» (Α΄ 221).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/md/2009/2876">
+			<Number>5</Number>
+			<Text>Την αριθ. 2876/7−10−2009 απόφαση του Πρωθυπουργού «Αλλαγή τίτλου Υπουργείων» (Β΄ 2234).</Text>
+		</Citation>
+		<Citation DocumentURI="http://localhost:8888/GRLegislation/md/2009/69139">
+			<Number>5</Number>
+			<Text> Την αριθ. 69139/7766/21−12−2009 κοινή απόφαση του Πρωθυπουργού και Υπουργού Υποδομών, Μεταφορών και Δικτύων «Ανάθεση αρμοδιοτήτων του Υπουργού Υποδομών, Μεταφορών και Δικτύων στους Υφυπουργούς Υποδομών, Μεταφορών και Δικτύων» (Β΄ 2514).</Text>
+		</Citation>
+    </Introduction> 
+    <Body DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/body">
+        <Article id="article-1" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1">
+			<Title>Σύσταση, Τίτλος, Αρμοδιότητες</Title>
+            <Number>1</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text> Συνιστάται Ειδική Υπηρεσία με τίτλο «Ειδική Υπηρεσία Δημοσίων Έργων Αντιπλημμυρικής προστασίας της κοιλάδας του ποταμού Έβρου και των παραποτάμων του» (ΕΥΔΕ ΕΒΡΟΥ), με αρμοδιότητα σε όλα τα θέματα που αφορούν στο ειδικό και σημαντικό έργο της αντιπλημμυρικής προστασίας της κοιλάδας του ποταμού Έβρου, Ερυθροποτάμου, Άρδα, παραποτάμων και Περι− φερειακής Τάφρου Ορεστιάδας.</Text>
+                </P2>
+            </P>
+			 <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text>Η Υπηρεσία αυτή ασκεί όλες τις αρμοδιότητες της Διευθύνουσας Υπηρεσίας σύμφωνα με τις διατάξεις που ισχύουν για τη μελέτη και κατασκευή των Δημοσίων Έργων.</Text>
+                </P2>
+            </P>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/3">
+                <Number>3</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/1/paragraph/3/passage/1">
+                    <Number>1</Number>
+                    <Text>. Έδρα της ΕΥΔΕ ΕΒΡΟΥ ορίζεται το Σουφλί και η διάρκεια λειτουργίας της ορίζεται οκταετής από την έναρξη ισχύος του παρόντος Προεδρικού Διατάγματος.</Text>
+                </P2>
+            </P>  
+        </Article>
+        <Article id="article-2" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2">
+			<Title>Οργάνωση Υπηρεσίας − Αρμοδιότητες</Title>
+            <Number>2</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/1">
+                <Number>1</Number>
+               <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Για την άσκηση αρμοδιοτήτων της Διευθύνουσας Υπηρεσίας συνιστώνται τα εξής Τμήματα:</Text>
+                </P2>
+                <List>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/2/case/1"><Value>α</Value><Text>Τμήμα Μελετών, με αρμοδιότητα για όλα τα θέματα που αφορούν στη μελέτη των έργων.</Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/2/case/2"><Value>β</Value><Text>Τμήμα Κατασκευών και Συντήρησης, με αρμοδιό− τητα για όλα τα θέματα που αφορούν στην κατασκευή και συντήρηση των έργων. </Text></Case>
+                    <Case DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/2/paragraph/2/case/3"><Value>γ</Value><Text>Τμήμα Διοικητικού−Οικονομικού, με αρμοδιότητα για όλα τα διοικητικά και οικονομικά θέματα της ΕΥΔΕ.</Text></Case>
+					</List>   
+            </P>     
+        </Article>
+		<Article id="article-3" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3">
+			<Title>Προϊστάμενοι Υπηρεσίας και Τμημάτων</Title>
+            <Number>3</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Της ΕΥΔΕ και των Τμημάτων Μελετών, Κατασκευών και Συντήρησης, προΐστανται υπάλληλοι κλάδου ΠΕ Πολιτικών Μηχανικών ή Αγρονόμων−Τοπογράφων Μηχανικών ή Μηχανολόγων Μηχανικών. Του Τμήματος Διοικητικού−Οικονομικού προΐσταται υπάλληλος κλάδου ΠΕ Διοικητικού − Οικονομικού. Ο ορισμός των ανωτέρω Προϊσταμένων γίνεται σύμφωνα με τις εκάστοτε ισχύουσες σχετικές διατάξεις.</Text>
+                </P2>
+            </P>
+			 <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/3/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text> Τον Προϊστάμενο της ΕΥΔΕ απουσιάζοντα η κωλυόμενο, αναπληρώνουν οι Προϊστάμενοι των Τμημάτων του άρθρου 2 (α, β) του παρόντος, σύμφωνα με τις διατάξεις του άρθρου 87 του υπαλληλικού κώδικα που κυρώθηκε με το άρθρο πρώτο του Ν. 3528/2007 (Α΄ 26), όπως αντικαταστάθηκε με το άρθρο πρώτο του Ν.3839/2010 (Α΄ 51).</Text>
+                </P2>
+            </P>
+		</Article>
+		<Article id="article-4" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/4">
+			<Title>Προϊστάμενοι Υπηρεσίας και Τμημάτων</Title>
+            <Number>4</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/4/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/4/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Οι θέσεις προσωπικού της ΕΥΔΕ καθορίζονται σε είκοσι πέντε (25) υπαλλήλους και κατανέμονται κατά κατηγορία και κλάδο ως εξής:</Text>
+                </P2>
+				<Table>
+				</Table>
+            </P>
+			 <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/4/paragraph/2">
+                <Number>2</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/4/paragraph/2/passage/1">
+                    <Number>1</Number>
+                    <Text> Η στελέχωση της ΕΥΔΕ γίνεται με μετακίνηση μονίμων ή με σύμβαση υπαλλήλων που υπηρετούν στις Υπηρεσίες της Γενικής Γραμματείας Δημοσίων Έργων ή με αποσπάσεις υπαλλήλων από άλλους φορείς του δημόσιου τομέα, που σχετίζονται με την κατασκευή ή την χρήση και λειτουργία των έργων ή όταν δεν υπάρ− χουν αντίστοιχες ειδικότητες ή δεν μπορεί να διατεθεί προσωπικό ανάλογων προσόντων, με ειδικό προσωπικό απαιτούμενων ειδικοτήτων, που προσλαμβάνεται σύμφωνα με τη διάταξη της παρ. 4, του άρθρου. 8 του Ν.679/1977, όπως συμπληρώθηκε με την παρ. 3 του άρθρου 5, του Ν.2229/1994.</Text>
+                </P2>
+            </P>
+		</Article>
+		<Article id="article-5" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/5">
+			<Title>Μεταβατικές διατάξεις</Title>
+            <Number>5</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/5/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/5/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Μεταβατικά και ως ότου στελεχωθεί και λειτουργήσει η ΕΥΔΕ ΕΒΡΟΥ, τις αρμοδιότητες της ασκεί το τμήμα Κατασκευών της Διεύθυνσης Εγγειοβελτιωτικών Έργων (Δ7), της Γενικής Γραμματείας Δημοσίων Έργων του Υπουργείου Υποδομών, Μεταφορών και Δικτύων.</Text>
+                </P2>
+            </P>
+		</Article>
+		<Article id="article-6" DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/6">
+			<Title>Ισχυς</Title>
+            <Number>6</Number>
+            <P DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/6/paragraph/1">
+                <Number>1</Number>
+                <P2 DocumentURI="http://localhost:8888/GRLegislation/pd/2011/54/article/6/paragraph/1/passage/1">
+                    <Number>1</Number>
+                    <Text>Η ισχύς του παρόντος Διατάγματος αρχίζει από τη δημοσίευσή του στην Εφημερίδα της Κυβερνήσεως. Στον Υπουργό Υποδομών, Μεταφορών και Δικτύων αναθέτουμε τη δημοσίευση και εκτέλεση του παρόντος Διατάγματος.</Text>
+                </P2>
+            </P>
+		</Article>
+    </Body>
+</Legislation>

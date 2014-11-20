@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:diavgeia="http://diavgeia.gov.gr/schema/model/diavgeia-decision-0.1">
+
+  <xsl:template match="/">
+    <html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>@ΝΟΜΟΘΕΣΙΑ</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="Η ελληνική νομοθεσία τώρα στο ανοιχτά στο διαδίκτυο!" />
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'/>
+        <link href="http://localhost:8888/GRLegislation/css/styles.css" rel="stylesheet"/>
+        </head>
+        <body  style="background-image:url('http://localhost:8888/GRLegislation/images/background.png')">
+            <div id="wrapper">
+                <div id="header" style="background-image:url('http://localhost:8888/GRLegislation/images/header.jpg')">
+                    <div id="title"><h1>@ΝΟΜΟΘΕΣΙΑ</h1></div>
+                    <div id="header_locale">
+                        <table>
+                            <tr>
+                                <td>
+                                    gr
+                                </td>
+                                <td>
+                                    /
+                                </td>
+                                <td>
+                                    uk
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="header_menu">
+                        <ul>
+                            <li><a href="http://localhost:8888/GRLegislation/index.html">Αρχική</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/search.html">Αναζήτηση</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/about.html">Πληροφορίες</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/help.html">Βοήθεια</a></li>
+                            <li><a href="http://localhost:8888/GRLegislation/contact.html">Επικοινωνία</a></li>
+                        </ul>
+                    </div>
+                    <div id="header_social">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h6>Ακολουθήστε μας στα social media! </h6>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/facebook-logo.png" align="right" width="30" height="30"/>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/twitter-logo.png" align="right" width="30" height="30"/>
+                                </td>
+                                <td>
+                                    <img src="http://localhost:8888/GRLegislation/images/rss-logo.png" align="right" width="25" height="25"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="content_column">
+                        <ul>
+                            <lh>ΕΚΔΟΣΕΙΣ</lh>
+                            <li><a href="index.html">Τρέχουσα</a></li>
+                            <li><a href="index.html">Πρώτη</a></li>
+                        </ul><br/>
+                        <div class="button" >
+                            <a href="" style="color: #fff;">XML Μορφή</a>
+                        </div><br/><br/>
+                        <div class="button" >
+                            <a href="" style="color: #fff;">RDF Μορφή</a>
+                        </div><br/><br/>
+                        <div class="button" >
+                            <a href="" style="color: #fff;">PDF Μορφή</a>
+                        </div>
+                        
+                    </div> 
+                    <div id="content_body">
+                        <div id="content_text">
+                            <div id="content_bar">
+                                 <ul>
+                                    <li style="font-size: 16px; font-weight: bold; float:left; padding-right:2em;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/contents
+                                        </xsl:attribute>Περιεχόμενα</a>
+                                    </li>
+                                    <li style="font-size: 16px; font-weight: bold; float:left; padding-right:2em;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>
+                                        </xsl:attribute>Κείμενο</a>
+                                    </li>
+                                    <li style="font-size: 16px; font-weight: bold; float:left;">
+                                        <a><xsl:attribute name="href">
+                                            <xsl:value-of select="Legislation/Metadata/dc:identifier"/>/timeline
+                                        </xsl:attribute>Χρονολόγιο</a>
+                                    </li>
+                                </ul>
+                                </div>
+                            <br/>
+                            <br/>
+                        <table border="0">
+                        <tr><td>ΦΕΚ:&#160;</td> 
+                            <td><xsl:value-of select="Legislation/Metadata/diavgeia:fek/issue"/>
+                        / <xsl:value-of select="Legislation/Metadata/diavgeia:fek/year"/>
+                        / <xsl:value-of select="Legislation/Metadata/diavgeia:fek/fekNumber"/>
+                        </td></tr>
+                        <tr>
+                            <td>ΚΩΔΙΚΟΣ ΑΠΟΦΑΣΗΣ:&#160;</td>
+                            <td> <xsl:value-of select="Legislation/Metadata/diavgeia:decisionType/diavgeia:label"/>
+                            &#160; <xsl:value-of select="Legislation/Metadata/Year"/>
+                            / <xsl:value-of select="Legislation/Metadata/Number"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ΗΜΕΡΟΜΗΝΙΑ ΕΚΔΟΣΗΣ:&#160;</td> 
+                            <td>
+                                <xsl:value-of select="Legislation/Metadata/dc:created"/>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>ΥΠΟΓΡΑΦΗ:&#160;</td> 
+                            <td>
+                                <xsl:for-each select="Legislation/Metadata/diavgeia:signer">
+                                <xsl:value-of select="diavgeia:firstName"/>&#160;
+                                <xsl:value-of select="diavgeia:lastName"/>,&#160;
+                                </xsl:for-each>
+                            </td>
+                           
+                        </tr>
+                         <tr>
+                            <td>ΣΧΕΤΙΚΑ ΜΕ:&#160;</td> 
+                            <td>
+                                <xsl:for-each select="Legislation/Metadata/diavgeia:tag">
+                                <xsl:value-of select="diavgeia:label"/>,&#160;
+                                </xsl:for-each>
+                            </td>
+                           
+                        </tr>
+                        </table>
+                        <br/>
+                        <h4>
+                            <xsl:value-of select="Legislation/Metadata/dc:title"/>
+                        </h4>
+                  
+                                                 <br/>
+                    </div>
+                    </div>
+                </div>
+                <div id="footer" style="background-image:url('http://localhost:8888/GRLegislation/images/footer.jpg')"/>
+            </div>
+        </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
+
