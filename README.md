@@ -64,26 +64,19 @@ CAUTION: Modify this configuration file, only if you are really expertised in We
 
 Nomothesi@ is implemented as an Apache Cocoon Project. Apache Cocoon is a Spring-based (since version 2.2 of Cocoon) framework built around the concepts of separation of concerns and component-based development. Cocoon implements these concepts around the notion of component pipelines, each component on the pipeline specializing on a particular operation. There are 3 fundamental components generators, transformers and serializers.
 
-*Generators 
+* Generators 
 
 Generator is the starting point of an XML pipeline. Usually, it generates XML content as SAX events and initializes pipeline processing. XML content can be either from an XML file or produced from other data models based on request parameters.
 
-*Transformers
+* Transformers
 
 A transformer is the central point in a sitemap pipeline. Within a pipeline match, transformers consume SAX events and emit SAX events. It can be compared to an XSL: it gets an XML document (or SAX events), and generates another XML document (or SAX events).
 
-*Serializers
+* Serializers
 
 A Serializer is responsible for transforming SAX events to a presentation format. We have Serializers for generating HTML, XML, PDF and of course you can create your own.
 
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                                                                          |
-|        REQUEST ---> GENERATOR ----> GENERATOR (2) ----> TRANSFORMER ---> TRANSFORMER (2) ---> SERIALIZER ---> RESPONSE                   |
-|                                                                                                                                          |
-+------------------------------------------------------------------------------------------------------------------------------------------+
-
-*Functionality
+* Functionality
 
 The functionality of these 3 parts is combined in pipelines, which are placed in the sitemap, like this:
 
@@ -105,17 +98,17 @@ Each request matches the appropriate pattern (eg /search). Then the generator (e
 
 In our project there are the following components:
 
-*Generators
+* Generators
 
 1. SearchGenarator: has the search functionality. Based on request parameters (search criteria), return the appropriate results as records in a XML file.
 2. RDFGenerator: has the functionality to gather RDF metadata. For this purpose connects with the Sesame Server and query (sparql query) our data sets to return any available RDF metadata for specific legal documents.
 3. VersionGenerator: has the functionality to gather updated information for specific legal documents. For this purpose connects with the Sesame Server and query (SPARQL query) our data sets to gather RDF metadata for Modifications about specific legal documents. Then uses this information to gather the appropriate Modifications via querying (Xquery) our XML filesystem. Returns these results as records in a XML file.
 
-*Actions
+* Actions
 
 1. UploadAction (DEMO VERSION): has the upload functionality. This is very simple drafting tool. It has been created for development work only.
 
-*Transformers
+* Transformers
 
 1. legislation.xslt: uses the input XML file (legal document) to create an output representation of the legal main text in HTML.
 2. legislation_updated: uses the input XML file (legal document and modifications) to update this XML file's legal text bases on the modifications.
@@ -127,11 +120,11 @@ In our project there are the following components:
 
 * There are some more transformers with 'en' tag, which are just English versions of the same transformers. 
 
-*Serializers
+* Serializers
 
 We use serializers, which are implemented by Apache Cocoon Framework. These are XHTML, XML and PDF serializers.
 
-*Data Models
+* Data Models
 
 Our basic data model is the XML schema. Usually we use pure XML files as data models (objects). There are also 2 classic data models:
 
