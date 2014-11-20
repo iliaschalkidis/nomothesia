@@ -136,7 +136,7 @@ Transformers
 6. legislation_plain.xslt : uses the input XML file (legal document) to create a plain output representation of the legal main text in HTML, without menu or other information.
 7. legislation_pdf.xslt (NOT WORKING!): uses the input XML file (legal document) to create an output representation of the legal main text in PDF.
 
-* There are some more transformers with 'en' tag, which are just English versions of the same transformers.
+* There are some more transformers with 'en' tag, which are just English versions of the same transformers. 
 
 Serializers
 ============
