@@ -1,11 +1,11 @@
-NOMOTHESI@ PLATFORM 1.0 READ ME
+#NOMOTHESI@ PLATFORM 1.0 READ ME
 ===============================
 
 Author: Ilias Chalkidis
 AM: 1115200700122
 Email: sdi0700122@di.uoa.gr
 
-SOFTWARE/LIBRARY DEPENDENCIES
+##SOFTWARE/LIBRARY DEPENDENCIES
 =============================
 
 Java Version: Java™ SE 7
