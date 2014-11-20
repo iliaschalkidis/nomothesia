@@ -12,11 +12,11 @@ XML DB Server: BaseX 7.8.2
 
 The project of Nomothesi@ platform is compressed in nomothesia-1.0.0.war file. The .war file in folder /webapps needs to be deployed in a Web Application Server (Apache Tomcat, Jetty) and also collaborates / communicates with 2 external web applications Sesame and BaseX, which also needs to be deployed. We will give instructions of how-to complete installation. After completing installation, you can browse Nomothesi@ platform at http://localhost:8080/nomothesia-1.0.0/GRLegislation/.
 
-1. **Apache Tomcat** (http://tomcat.apache.org/)
+* **Apache Tomcat** (http://tomcat.apache.org/)
 
 Apache Tomcat can be downloaded here (http://tomcat.apache.org/download-70.cgi), depends to the operating system and its distribution. You can find installation instructions here (http://tomcat.apache.org/tomcat-7.0-doc/setup.html). After installation, you can point your browser at this location (http://localhost:8080/) to verify that the deployment succeeded. The easiest way to deploy Nomothesi@ Platform is placing GRLegislation.war in Tomcat's folder /webbapps. You can find information of how-to deploy an application here (http://tomcat.apache.org/tomcat-7.0-doc/deployer-howto.html)
 
-2. **Sesame Server** (http://www.openrdf.org/)
+* **Sesame Server** (http://www.openrdf.org/)
 
 Sesame Server can be downloaded here (http://sourceforge.net/projects/sesame/files/Sesame%202/2.7.11/openrdf-sesame-2.7.11-sdk.zip/download). You can also find the .war files in /webapps folder. The war files needs to be deployed in Apache Tomcat. The easiest way to deploy this application is to place the .war files in webapps folder of Apache Tomcat and restart it. After you have deployed the Sesame Server webapp, you should be able to access it, by default, at path /openrdf-sesame. You can point your browser at this location to verify that the deployment succeeded. You can also manage repositories from the OpenRDF Workbench, which should be available at path /openrdf-workbench.
 
@@ -24,7 +24,7 @@ For the purposes of our project, you need to visit /openrdf-workbench create a n
 
 Any additional information for downloading, installing and interacting with Sesame Server can be found in the website's user's documentation. 
 
-3. **BaseX XML DB Server** (http://basex.org/)
+* **BaseX XML DB Server** (http://basex.org/)
 
 BaseX XML DB Server can be downloaded here (http://files.basex.org/releases/7.8.2/BaseX782.war). You can also find the .war file in /webapps folder. Like Sesame, the war file needs to be deployed in Apache Tomcat. The easiest way to deploy this application is to place the .war file in webapps folder of Apache Tomcat and restart it. After you have deployed the BaseX XML DB Server, you should be able to access it, by default, at path /BaseX782. You can point your browser at this location to verify that the deployment succeeded.
 
