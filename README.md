@@ -139,17 +139,23 @@ Our basic data model is the XML schema. Usually we use pure XML files as data mo
 
 ##Demo Sample Files (Legal Documents)
 
-PD201154.xml 
-PD201210.xml 
-PD201340.xml 
+PD201154.xml
+
+PD201210.xml
+
+PD201340.xml
+
 LAW20144229.xml 
 
 
 ##Test Environment
 
 OS: Ubuntu 13.10
+
 Web Server: Jetty Server 6.1.7
+
 RDFStore: Sesame Server 2.7.9 (on Apache Tomcat 7)
+
 XML DB Server: BaseX 7.8 (on Apache Tomcat 7)
 
 ## Known Bugs
